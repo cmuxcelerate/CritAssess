@@ -1,8 +1,8 @@
 export class Answer {
 	text: string;
 	correct: boolean;
-	selected: boolean;
 	partialCredit: number;
+	selected: boolean;
 
 	constructor(text: string, correct: boolean, partialCredit?: number) {
 		this.text = text;

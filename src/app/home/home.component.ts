@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { AssessmentService } from '../assessment_data/assessment.service';
+import { Assessment } from '../assessment_data/assessment_classes/assessment';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+	// assessmentService: AssessmentService;
+	get assessment(): Assessment {
+		return this.assessmentService.assessment;
+	}
 
-  ngOnInit() {
-  }
+	constructor(private assessmentService: AssessmentService) {
+		
+	}
+
+	ngOnInit() {
+	}
 
 }

@@ -1,0 +1,10 @@
+<h3>{{question.prompt}} Score: {{question.score}}</h3>
+
+<div *ngFor="let answer of question.answers">
+
+	<p>
+		{{answer.text}}
+	</p>
+	<input type="radio" name="{{question.prompt}}" value="{{answer.text}}" (change)="onSelectionChange(answer.text)">
+	{{answer.selected}}
+</div>

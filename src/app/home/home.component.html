@@ -28,4 +28,8 @@
 			</div>
 		</div>
 	</div>
+
+
+	<app-mcq *ngFor="let question of assessment.questions" [question]="question"></app-mcq>
+
 </div>
