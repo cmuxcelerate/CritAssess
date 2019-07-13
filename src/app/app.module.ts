@@ -8,7 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 // import { TestComponent } from './test/test.component';
 // import { TestPageIconComponent } from './test/test-page-icon/test-page-icon.component';
-import { McqComponent } from './assessment_view/mcq/mcq.component';
+import { McqComponent } from './assessment_view/question_type_templates/mcq/mcq.component';
 
 @NgModule({
   declarations: [

@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Question } from '../../assessment_data/assessment_classes/question';
+import { Question } from '../../../assessment_data/assessment_classes/question';
 @Component({
 	selector: 'app-mcq',
 	templateUrl: './mcq.component.html',
