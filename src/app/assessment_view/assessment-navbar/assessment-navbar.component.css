@@ -1,0 +1,52 @@
+/*Wraps entire component*/
+#assessmentNavbarWrapper {
+	display: flex;
+	position: relative;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+	height: 52px;
+	margin-bottom: 52px;
+	border: 2px solid black;
+}
+
+span {
+	display: block;
+}
+/*Each group of icon + text in navbar, including progressbar*/
+.navbarGroup {
+	display: inline-block;
+	position: relative;
+}
+
+
+#pauseTestWrapper {
+	margin-left: 5%;
+	/*vertical-align: middle;*/
+}
+
+#timerWrapper {
+	margin-left: 40%;
+}
+
+/*Progress bar*/
+#progressBarWrapper {
+	width: 19.4%;
+	margin-left: 20%;
+}
+#progressBarBackground {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 13px;
+	border-radius: 6.5px;	
+	background-color: rgba(234, 234, 234, 0.5);
+}
+#progressBarFilling {
+	display: inline-block;
+	position: relative;
+	width: 10%;
+	height: 13px;
+	border-radius: 6.5px;
+	background-color: #6840CC;
+}
