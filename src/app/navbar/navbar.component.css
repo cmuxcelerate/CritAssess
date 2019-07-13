@@ -9,10 +9,31 @@
 }
 
 span {
+	position: relative;
+	width: 397px;
+	height: 22px;
+	left: 9%;
+	top: 17px;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 23px;
 	letter-spacing: 0.05em;
 	color: #FFF;
+}
+
+.logo{
+	position: relative;
+	width: 21px;
+	height: 16px;
+	left: 6.94%;
+	top: 19px;
+}
+
+.account{
+	position: relative;
+	width: 21px;
+	height: 21px;
+	left: 85%;
+	top: 15px;
 }
