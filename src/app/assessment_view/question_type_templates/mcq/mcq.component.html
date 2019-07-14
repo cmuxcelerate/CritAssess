@@ -8,3 +8,8 @@
 	<input id="{{i}}" type="radio" name="{{question.prompt}}" value="{{answer.text}}" (change)="onSelectionChange(answer.text)">
 	<label for="{{i}}">{{answer.text}}</label>
 </div>
+
+<div id="buttonRow">
+	<button id="confirm">Confirm</button>
+	<button id="continue" disabled="disabled">Continue</button>
+</div>
