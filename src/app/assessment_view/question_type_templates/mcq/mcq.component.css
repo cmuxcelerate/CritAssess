@@ -35,45 +35,59 @@ p {
 	margin-bottom: 14px;
 }
 
-input {
-	display: inline-block;
-	position: relative;
-     -webkit-appearance: none;
-     -moz-appearance: none;
-     appearance: none;
-     width: 15px;
-     height: 15px;
-     border: 1px solid #6840CC;
-     border-radius: 50%;
-     padding: 0px;
-     margin: 0px;
-     box-sizing: border-box;
-     vertical-align: middle;
+
+/*Custom radio buttons */
+
+/* Hide the original radio */
+input[type="radio"] {
+    display: none;
 }
 
-input:checked {
-	background-color: #6840CC;
-}
-
-/*input:checked::after {
-	display: block;
-	position: absolute;
-	content: " ";
-	height: 11px;
-	width: 11px;
-	border-radius: 5.5px;
-	padding: 0px;
-	margin: 0px;
-	left: 1px;
-	top: 1px;
-	background-color: #6840CC;
-	box-sizing: border-box;
-}*/
-
-label {
+/* Label positioning */
+input[type="radio"] + label {
 	display: inline-block;
 	position: relative;
-	margin-left: 23px;
+	padding-left: 36px;
+	line-height: 20px;
+	cursor: pointer;
 	width: 87.7%;
 	vertical-align: middle;
+}
+
+/* Draw outer circle (using ::before) */
+input[type="radio"] + label::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 18px;
+	height: 18px;
+	background-color: #FFF;
+	border: 1px solid #6840CC;
+	border-radius: 100%;
+}
+
+/* Use after to draw the dot inside */
+input[type="radio"] + label::after {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 12px;
+	height: 12px;
+	background-color: #6840CC;
+	border-radius: 50%;
+	transition: all .2s ease;
+}
+
+/* Hide inner dot when unchecked */
+input[type="radio"]:not(:checked) + label:after {
+	opacity: 0;
+	transform: scale(0);
+}
+
+/*Show dot when checked*/
+input[type="radio"]:checked + label:after {
+	opacity: 1;
+	transform: scale(1);
 }
