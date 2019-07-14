@@ -1,10 +1,10 @@
-<h3>{{question.prompt}} Score: {{question.score}}</h3>
+<!-- <h3>{{question.prompt}} Score: {{question.score}}</h3> -->
 
-<div *ngFor="let answer of question.answers">
+<h3>{{question.header}}</h3>
+<p id="prompt">{{question.prompt}}</p>
+<span>Click on an circle to elect one answer choice. To choose a different anser, click one different circle.</span>
 
-	<p>
-		{{answer.text}}
-	</p>
-	<input type="radio" name="{{question.prompt}}" value="{{answer.text}}" (change)="onSelectionChange(answer.text)">
-	{{answer.selected}}
+<div *ngFor="let answer of question.answers; index as i" class="answerChoice">
+	<input id="{{i}}" type="radio" name="{{question.prompt}}" value="{{answer.text}}" (change)="onSelectionChange(answer.text)">
+	<label for="{{i}}">{{answer.text}}</label>
 </div>

@@ -4,12 +4,14 @@ import { Answer } from './assessment_classes/answer';
 export const questions: Question[] = [
 	new Question(
 		"mcq", //type of question
-		"Where and why should we get down?", //question prompt
+		"Question 1 of 2", //Header label 
+		"Which of the following would be the best sequence of features to build, given the above constraints?", //question prompt
 		// answers
 		[
-			new Answer("to business", false),
-			new Answer("to defeat the huns", true),
-			new Answer("get down, get down, get down, get down tonight", false)
+			new Answer("A, B, E", false),
+			new Answer("F, E, B", true),
+			new Answer("F, A, C", false),
+			new Answer("B, E, F", false)
 		],
 
 		// KC's
@@ -23,6 +25,7 @@ export const questions: Question[] = [
 
 	new Question(
 		"mcq", //type of question
+		"Question 2 of 2",
 		"How now, brown cow?", //question prompt
 		// answers
 		[
