@@ -5,11 +5,11 @@
 <span>Click on an circle to elect one answer choice. To choose a different anser, click one different circle.</span>
 
 <div *ngFor="let answer of question.answers; index as i" class="answerChoice">
-	<input id="{{i}}" type="radio" name="{{question.prompt}}" value="{{answer.text}}" (change)="onSelectionChange(answer.text)">
+	<input id="{{i}}" type="radio" name="{{question.prompt}}" value="{{answer.text}}" (change)="onSelectionChange(answer.text)" [disabled]="assessment.confirmedAnswer">
 	<label for="{{i}}">{{answer.text}}</label>
 </div>
 
 <div id="buttonRow">
-	<button id="confirm">Confirm</button>
-	<button id="continue" disabled="disabled">Continue</button>
+	<button id="confirm" [disabled]="assessment.confirmedAnswer || !answerIsSelected" (click)="submitAnswer()">Confirm</button>
+	<button id="continue" [disabled]="!assessment.confirmedAnswer" (click)="nextQuestion()">Continue</button>
 </div>

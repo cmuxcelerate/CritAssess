@@ -1,0 +1,8 @@
+<app-assessment-navbar></app-assessment-navbar>
+<div id="assessmentPageWrapper">
+	<div [ngSwitch]="assessment.scenario" class="scenario">
+		<app-scenario1 *ngSwitchCase="'0'" ></app-scenario1>
+		<app-scenario2 *ngSwitchCase="'1'"></app-scenario2>
+	</div>
+	<app-mcq [question]="assessment.questionGroups[assessment.scenario][assessment.question]"></app-mcq>
+</div> <!-- End s1q1 -->

@@ -14,6 +14,8 @@ import { DirectionsPageComponent } from './assessment_view/pre-test_pages/direct
 import { SectionSelectionPageComponent } from './assessment_view/pre-test_pages/section-selection-page/section-selection-page.component';
 import { Scenario1Component } from './assessment_view/scenarios/scenario1/scenario1.component';
 import { S1q1Component } from './assessment_view/question_views_with_scenarios/s1q1/s1q1.component';
+import { AssessmentPageComponent } from './assessment_view/question_views_with_scenarios/assessment-page/assessment-page.component';
+import { Scenario2Component } from './assessment_view/scenarios/scenario2/scenario2.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { S1q1Component } from './assessment_view/question_views_with_scenarios/s
     DirectionsPageComponent,
     SectionSelectionPageComponent,
     Scenario1Component,
-    S1q1Component
+    S1q1Component,
+    AssessmentPageComponent,
+    Scenario2Component
   ],
   imports: [
     BrowserModule,

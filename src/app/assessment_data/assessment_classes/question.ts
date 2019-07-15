@@ -1,16 +1,16 @@
 import { Answer } from './answer';
 export class Question {
 	type: string;
-	header: string;
+	// header: string;
 	prompt: string;
 	answers: Answer[];
 	// studentAnswers: Boolean[]; //For each answer, whether that answer is selected
 	weight: number; //Value of this question
 	kcs: string[];
 
-	constructor(type:string, header: string, prompt: string, answers:Answer[], kcs?: string[], weight?: number) {
+	constructor(type:string, prompt: string, answers:Answer[], kcs?: string[], weight?: number) {
 		this.type = type;
-		this.header = header;
+		// this.header = header;
 		this.answers = answers;
 		this.prompt = prompt;
 		if (this.weight != undefined) {
