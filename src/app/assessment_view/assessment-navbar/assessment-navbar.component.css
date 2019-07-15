@@ -64,3 +64,13 @@ span {
 	border-radius: 6.5px;
 	background-color: #6840CC;
 }
+
+#progressLabelsWrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+#progressLabelsWrapper span {
+	display: inline-block;
+	width: auto;
+}

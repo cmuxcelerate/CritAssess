@@ -18,15 +18,20 @@ span {
 	display: block;
 	position: relative;
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 300;
 	font-size: 14px;
 	line-height: 16px;
-	color: #858585;
+	letter-spacing: 0.02em;
 	margin-bottom: 44px;
 }
 
 p {
 	display: inline-block;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 150%;
+	letter-spacing: 0.05em;
 }
 
 .answerChoice {
@@ -52,6 +57,12 @@ input[type="radio"] + label {
 	cursor: pointer;
 	width: 87.7%;
 	vertical-align: middle;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 150%;
+	/* identical to box height, or 22px */
+	letter-spacing: 0.05em;
 }
 
 /* Draw outer circle (using ::before) */
@@ -99,6 +110,7 @@ input[type="radio"]:checked + label:after {
 	position: relative;
 	justify-content: center;
 	flex-direction: row;
+	margin-top: 50px;
 }
 button {
 	width: 200px;
@@ -113,11 +125,13 @@ button {
 	text-align: center;
 	letter-spacing: 0.1em;
 	cursor: pointer;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
 }
 
 button:disabled {
 	background-color: #C4C4C4;
 	cursor: default;
+	box-shadow: none;
 }
 #confirm {
 	order: 0;
