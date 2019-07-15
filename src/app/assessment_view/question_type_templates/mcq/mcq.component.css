@@ -64,7 +64,9 @@ input[type="radio"] + label {
 	/* identical to box height, or 22px */
 	letter-spacing: 0.05em;
 }
-
+input[type="radio"]:disabled + label {
+	cursor: default;
+}
 /* Draw outer circle (using ::before) */
 input[type="radio"] + label::before {
 	content: '';
