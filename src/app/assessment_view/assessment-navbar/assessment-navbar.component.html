@@ -14,8 +14,10 @@
 			<div id="progressBarFilling" [ngStyle]="{'width': assessment.questionsAnswered/assessment.questionCount * 100 + '%'}"></div>
 		</div>
 		<div id="progressLabelsWrapper">
+			<!-- Labels -->
 			<span>Progress</span>
-			<span>{{assessment.questionsAnswered == assessment.questionCount ? '100%':(assessment.questionsAnswered/assessment.questionCount * 100 + '').substring(0, 2) + '%'}}</span>
+			<span>{{assessment.questionsAnswered == assessment.questionCount ? '100%':(assessment.questionsAnswered/assessment.questionCount * 100 + '').substring(0, 2) + '%'}}</span><!-- 
+			 -->
 		</div>
 	</div>
 </div> <!-- End navbar wrapper -->

@@ -2,7 +2,7 @@
 #assessmentNavbarWrapper {
 	display: flex;
 	position: relative;
-	align-items: center;
+	align-items: flex-end;
 	flex-direction: row;
 	width: 100%;
 	height: 82px;
@@ -24,11 +24,12 @@ span {
 	display: inline-block;
 	position: relative;
 	text-align: center;
+	height: 55px;
 }
 
 
 #pauseTestWrapper {
-	margin-left: 5%;
+	margin-left: 4.5%;
 	/*vertical-align: middle;*/
 }
 
@@ -45,8 +46,11 @@ span {
 /*Progress bar*/
 #progressBarWrapper {
 	width: 19.4%;
-	margin-left: 20%;
+	margin-left: 19%;
 	text-align: left;
+	vertical-align: bottom;
+	/*align-self: flex-end;*/
+	height: 42.5px;
 }
 #progressBarBackground {
 	display: inline-block;
@@ -71,6 +75,6 @@ span {
 	justify-content: space-between;
 }
 #progressLabelsWrapper span {
-	display: inline-block;
+	display: block;
 	width: auto;
 }
