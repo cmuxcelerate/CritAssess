@@ -32,12 +32,14 @@ export class McqComponent implements OnInit {
 
 	// Confirms answer choice
 	submitAnswer() {
-		if (this.answerIsSelected) this.assessment.confirmedAnswer = true;
+		if (this.answerIsSelected) {
+			this.assessment.confirmedAnswer = true;
+			this.assessment.questionsAnswered++;
+		}
 	}
 
 	// Goes to next question, if possible
 	nextQuestion() {
-		console.log("going to next question");
 		// If there is another question in this scenario, load it
 		if (this.assessment.question < this.assessment.questionGroups[this.assessment.scenario].length - 1) {
 			this.assessment.question++;

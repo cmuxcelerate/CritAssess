@@ -5,11 +5,25 @@ export class Assessment {
 	scenario: number; //Which scenario learner is currently on (starts at 0)
 	question: number; //Which question within the scenario learner is currently on (starts at 0)
 	confirmedAnswer: boolean; //Whether learner has hit 'confirm' on this question
+	questionsAnswered: number; //How many questions have been answered so far
 	constructor(questionGroups: Question[][]) {
 		this.questionGroups = questionGroups;
-		this.scenario = 1;
+		this.scenario = 0;
 		this.question = 0;
 		this.confirmedAnswer = false;
+		this.questionsAnswered = 0;
+	}
+
+
+	// Returns total number of questions in assessment
+	get questionCount(): number {
+		let res = 0;
+		this.questionGroups.forEach(questionGroup => {
+			questionGroup.forEach(question => {
+				res++;
+			});
+		});
+		return res;
 	}
 
 	// Returns dictionary with scores & counts for each kc

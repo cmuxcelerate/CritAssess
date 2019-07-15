@@ -4,14 +4,14 @@
 		<span>Pause Test</span>
 	</div>
 
-	<div id="timerWrapper" class="navbarGroup">
+	<div id="timerWrapper" class="navbarGroup" (click)="toggleTimer()">
 		<img src="./assets/clock.png">
-		<span>00:00</span>
+		<span [ngStyle]="{'display': showTimer ? 'block' : 'none'}">{{assessmentMinutes}}:{{assessmentSeconds}}</span>
 	</div>
 
 	<div id="progressBarWrapper" class="navbarGroup">
 		<div id="progressBarBackground">
-			<div id="progressBarFilling"></div>
+			<div id="progressBarFilling" [ngStyle]="{'width': assessment.questionsAnswered/assessment.questionCount * 100 + '%'}"></div>
 		</div>
 		<span>Progress</span>
 	</div>
