@@ -1,0 +1,21 @@
+#scenarioWrapper {
+	max-height: 650px;
+	overflow: auto;
+}
+h1	{
+	margin-top: 52px;
+	height: 47px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 23px;
+	letter-spacing: 0.015em;
+}
+
+p {
+	font-style: normal;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 150%;
+	letter-spacing: 0.05em;
+}

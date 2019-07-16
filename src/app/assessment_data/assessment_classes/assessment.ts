@@ -8,7 +8,7 @@ export class Assessment {
 	questionsAnswered: number; //How many questions have been answered so far
 	constructor(questionGroups: Question[][]) {
 		this.questionGroups = questionGroups;
-		this.scenario = 0;
+		this.scenario = 4;
 		this.question = 0;
 		this.confirmedAnswer = false;
 		this.questionsAnswered = 0;
