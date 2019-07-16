@@ -12,10 +12,15 @@ import { McqComponent } from './assessment_view/question_type_templates/mcq/mcq.
 import { AssessmentNavbarComponent } from './assessment_view/assessment-navbar/assessment-navbar.component';
 import { DirectionsPageComponent } from './assessment_view/pre-test_pages/directions-page/directions-page.component';
 import { SectionSelectionPageComponent } from './assessment_view/pre-test_pages/section-selection-page/section-selection-page.component';
-import { Scenario1Component } from './assessment_view/scenarios/scenario1/scenario1.component';
-import { S1q1Component } from './assessment_view/question_views_with_scenarios/s1q1/s1q1.component';
 import { AssessmentPageComponent } from './assessment_view/question_views_with_scenarios/assessment-page/assessment-page.component';
+import { S1q1Component } from './assessment_view/question_views_with_scenarios/s1q1/s1q1.component';
+import { Scenario1Component } from './assessment_view/scenarios/scenario1/scenario1.component';
 import { Scenario2Component } from './assessment_view/scenarios/scenario2/scenario2.component';
+import { Scenario3Component } from './assessment_view/scenarios/scenario3/scenario3.component';
+import { Scenario4Component } from './assessment_view/scenarios/scenario4/scenario4.component';
+import { Scenario5Component } from './assessment_view/scenarios/scenario5/scenario5.component';
+import { Scenario6Component } from './assessment_view/scenarios/scenario6/scenario6.component';
+import { Scenario7Component } from './assessment_view/scenarios/scenario7/scenario7.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +36,12 @@ import { Scenario2Component } from './assessment_view/scenarios/scenario2/scenar
     Scenario1Component,
     S1q1Component,
     AssessmentPageComponent,
-    Scenario2Component
+    Scenario2Component,
+    Scenario3Component,
+    Scenario4Component,
+    Scenario5Component,
+    Scenario6Component,
+    Scenario7Component
   ],
   imports: [
     BrowserModule,

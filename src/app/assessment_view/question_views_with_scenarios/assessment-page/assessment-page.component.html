@@ -3,6 +3,11 @@
 	<div [ngSwitch]="assessment.scenario" class="scenario">
 		<app-scenario1 *ngSwitchCase="'0'" ></app-scenario1>
 		<app-scenario2 *ngSwitchCase="'1'"></app-scenario2>
+		<app-scenario3 *ngSwitchCase="'2'" ></app-scenario3>
+		<app-scenario4 *ngSwitchCase="'3'"></app-scenario4>
+		<app-scenario5 *ngSwitchCase="'4'" ></app-scenario5>
+		<app-scenario6 *ngSwitchCase="'5'"></app-scenario6>
+		<app-scenario7 *ngSwitchCase="'6'" ></app-scenario7>
 	</div>
 	<app-mcq [question]="assessment.questionGroups[assessment.scenario][assessment.question]"></app-mcq>
 </div> <!-- End s1q1 -->
