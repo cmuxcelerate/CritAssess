@@ -21,6 +21,7 @@ import { Scenario4Component } from './assessment_view/scenarios/scenario4/scenar
 import { Scenario5Component } from './assessment_view/scenarios/scenario5/scenario5.component';
 import { Scenario6Component } from './assessment_view/scenarios/scenario6/scenario6.component';
 import { Scenario7Component } from './assessment_view/scenarios/scenario7/scenario7.component';
+import { SelectAllComponent } from './assessment_view/question_type_templates/select-all/select-all.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { Scenario7Component } from './assessment_view/scenarios/scenario7/scenar
     Scenario4Component,
     Scenario5Component,
     Scenario6Component,
-    Scenario7Component
+    Scenario7Component,
+    SelectAllComponent
   ],
   imports: [
     BrowserModule,

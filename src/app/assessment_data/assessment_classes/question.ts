@@ -27,6 +27,7 @@ export class Question {
 
 	// returns current score on this question (based on selection)
 	get score(): number {
+		console.log("\n\nScoring question: " + this.prompt);
 		let score = 0;
 		this.answers.forEach(answer => {
 			switch (this.type) {
@@ -40,18 +41,22 @@ export class Question {
 					}
 					break;
 				case "select-all":
+					console.log("checking answer: " + answer.text);
 					if (answer.correct == answer.selected) {
+						console.log("correct answer");
 						score++;
 					}
 					//Give partial credit if wrong answer was selected
 					else if (answer.selected) score += answer.partialCredit;
-					score = score/this.answers.length * this.weight;
 					break;
 				default:
 					console.log("default score");
 					break;
 			}
 		});
+		console.log("score after scoring each answer before division: " + score);
+		score = score/this.answers.length * this.weight;
+		console.log("final quesiton score " + score);
 		return score;
 	}
 }

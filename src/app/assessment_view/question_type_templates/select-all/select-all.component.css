@@ -1,0 +1,78 @@
+h3 {
+	margin-top: 47px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 23px;
+	letter-spacing: 0.015em;
+	margin-bottom: 31px;
+}
+
+#prompt {
+	margin-bottom: 57px;
+	height: 53px;
+}
+
+/*Instruction text to 'Click on a circle'*/
+span {
+	display: block;
+	position: relative;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+	margin-bottom: 44px;
+}
+
+p {
+	display: inline-block;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 150%;
+	letter-spacing: 0.05em;
+}
+
+.answerChoice {
+	display: block;
+	position: relative;
+	margin-bottom: 14px;
+}
+
+/*Buttons*/
+#buttonRow {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	flex-direction: row;
+	margin-top: 50px;
+}
+button {
+	width: 170px;
+	height: 51px;
+	border-radius: 6px;
+	background-color: #6840CC;
+	color: #FFF;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 19px;
+	line-height: 22px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	cursor: pointer;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+button:disabled {
+	background-color: #C4C4C4;
+	cursor: default;
+	box-shadow: none;
+}
+#confirm {
+	order: 0;
+}
+#continue {
+	order: 1;
+	margin-left: 20px;
+}

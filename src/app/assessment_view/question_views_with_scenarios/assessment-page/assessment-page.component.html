@@ -9,5 +9,8 @@
 		<app-scenario6 *ngSwitchCase="'5'"></app-scenario6>
 		<app-scenario7 *ngSwitchCase="'6'" ></app-scenario7>
 	</div>
-	<app-mcq [question]="assessment.questionGroups[assessment.scenario][assessment.question]"></app-mcq>
+	<!-- Show mcq template for mcq questions -->
+	<app-mcq *ngIf="assessment.questionGroups[assessment.scenario][assessment.question].type=='mcq'" [question]="assessment.questionGroups[assessment.scenario][assessment.question]"></app-mcq>
+	<!-- Show select-all template for select-all questions -->
+	<app-select-all *ngIf="assessment.questionGroups[assessment.scenario][assessment.question].type=='select-all'" [question]="assessment.questionGroups[assessment.scenario][assessment.question]"></app-select-all>
 </div> <!-- End s1q1 -->

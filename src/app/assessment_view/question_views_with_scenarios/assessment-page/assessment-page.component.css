@@ -14,7 +14,7 @@
 	border-right: 1px solid rgba(206, 206, 206, 0.5);
 }
 
-app-mcq {
+app-mcq, app-select-all {
 	display: inline-block;
 	position: relative;
 	vertical-align: top;
