@@ -7,6 +7,7 @@
 	<div id="timerWrapper" class="navbarGroup" (click)="toggleTimer()">
 		<img src="./assets/clock.png">
 		<span [ngStyle]="{'display': showTimer ? 'block' : 'none'}">{{assessmentMinutes}}:{{assessmentSeconds}}</span>
+		<span [ngStyle]="{'display': !showTimer ? 'block' : 'none'}" class="timerLabel">Show Timer</span>
 	</div>
 
 	<div id="progressBarWrapper" class="navbarGroup">
