@@ -11,5 +11,5 @@
 <div id="buttonRow">
 	<button id="confirm" [disabled]="assessment.confirmedAnswer || !answerIsSelected" (click)="submitAnswer()">Confirm</button>
 	<button id="continue" [disabled]="!assessment.confirmedAnswer" (click)="nextQuestion()">Continue</button>
-	<button (click)="logScore()">Score</button>
+	<!-- <button (click)="logScore()">score</button> -->
 </div>

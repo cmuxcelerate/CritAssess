@@ -69,10 +69,96 @@ button:disabled {
 	cursor: default;
 	box-shadow: none;
 }
+
+button:active {
+	box-shadow: none;
+	background-color: #5332A3;
+}
+
+button:hover:enabled {
+	color: #C4C4C4;
+}
 #confirm {
 	order: 0;
 }
 #continue {
 	order: 1;
 	margin-left: 20px;
+}
+
+/*
+	Checkboxes
+*/
+label {
+	padding-left: 40px;
+	cursor: pointer;
+	padding-left: 36px;
+	line-height: 20px;
+	width: 87.7%;
+	vertical-align: middle;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 150%;
+	/* identical to box height, or 22px */
+	letter-spacing: 0.05em;
+}
+/*Hide default checkbox*/
+input {
+	position: absolute;
+	opacity: 0;
+}
+/*Draw new checkbox with ::before*/
+input + label::before {
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	/*top: 3px;*/
+	/*top: 0px;*/
+	vertical-align: middle;
+	content: '';
+	width: 15px;
+	height: 15px;
+	border: 1px solid #6840CC;
+	box-sizing: border-box;
+	border-radius: 2px;
+	cursor: pointer;
+	box-sizing: border-box;
+	/*background-color: #000;*/
+}
+
+/*Use normal cursor (not pointer) when checkbox is disabaled*/
+input:disabled + label::before {
+	cursor: default;
+}
+
+/*position textbox and checkmark*/
+input + label::before, input+label::after {
+	top: 3px;
+}
+/*Draw Check mark (hidden by default)*/
+input + label::after {
+	/*top: 0px;*/
+	left: 3px;
+	content: "";
+	display: none;
+	position: absolute;
+	border: solid #000;
+	height: 8px;
+	width: 4px;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	transition: all .2s ease;
+}
+
+/*Reveal checkbox when hovering over label*/
+input:checked + label::after {
+	display: block;
+}
+/* On mouse-over, add a grey background color */
+input:enabled:hover:not(:checked) + label::before {
+  background-color: #DDD;
+  /*background-color: #6840CC;*/
 }

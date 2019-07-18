@@ -27,8 +27,8 @@ export class Question {
 
 	// returns current score on this question (based on selection)
 	get score(): number {
-		console.log("\n\nScoring question: " + this.prompt);
 		let score = 0;
+		// console.log("\n\nscoring question");
 		this.answers.forEach(answer => {
 			switch (this.type) {
 				case "mcq":
@@ -41,9 +41,8 @@ export class Question {
 					}
 					break;
 				case "select-all":
-					console.log("checking answer: " + answer.text);
+					// console.log(`\n\nScoring answer ${answer.text}. Selected? ${answer.selected}`);
 					if (answer.correct == answer.selected) {
-						console.log("correct answer");
 						score++;
 					}
 					//Give partial credit if wrong answer was selected
@@ -54,9 +53,7 @@ export class Question {
 					break;
 			}
 		});
-		console.log("score after scoring each answer before division: " + score);
 		score = score/this.answers.length * this.weight;
-		console.log("final quesiton score " + score);
 		return score;
 	}
 }
