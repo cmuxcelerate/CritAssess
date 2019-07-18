@@ -19,6 +19,9 @@ body {
 *::-webkit-scrollbar-thumb {
 	border-radius: 6px;
 	background-color: rgba(133, 133, 133, 0.53);
+	height: 50px;
+	position: relative;
+	display: inline-block;
 }
 
 *::-webkit-scrollbar {

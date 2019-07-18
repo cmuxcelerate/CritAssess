@@ -1,5 +1,7 @@
 #scenarioWrapper {
-    width: 91%;
+	max-height: 650px;
+	overflow: auto;
+	width: 91%;
     padding-right: 9.8%;
 }
 h1	{
