@@ -132,6 +132,10 @@ input:disabled + label::before {
 	cursor: default;
 }
 
+/*Background color fill when */
+input:checked + label::before {
+	background-color: #6840CC;
+}
 /*position textbox and checkmark*/
 input + label::before, input+label::after {
 	top: 3px;
@@ -139,14 +143,14 @@ input + label::before, input+label::after {
 /*Draw Check mark (hidden by default)*/
 input + label::after {
 	/*top: 0px;*/
-	left: 3px;
+	left: 4px;
 	content: "";
 	display: none;
 	position: absolute;
-	border: solid #000;
-	height: 8px;
+	border: solid #FFF;
+	height: 9px;
 	width: 4px;
-	border-width: 0 3px 3px 0;
+	border-width: 0 2px 2px 0;
 	-webkit-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
