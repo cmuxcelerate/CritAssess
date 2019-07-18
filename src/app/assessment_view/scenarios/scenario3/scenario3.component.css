@@ -1,4 +1,9 @@
 #scenarioWrapper {
+    width: 91%;
+    padding-right: 9.8%;
+}
+
+#scenarioWrapper {
 	max-height: 650px;
 	overflow: auto;
 }
