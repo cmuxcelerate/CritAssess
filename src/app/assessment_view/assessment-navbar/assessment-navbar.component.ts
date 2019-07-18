@@ -33,7 +33,7 @@ export class AssessmentNavbarComponent implements OnInit {
 	constructor(private assessmentService: AssessmentService) { }
 
 	ngOnInit() {
-		this.showTimer = true;
+		this.showTimer = false;
 		// Start timer
 		setInterval(_ => {
 			this.assessmentTime++;
