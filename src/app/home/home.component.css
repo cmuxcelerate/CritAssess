@@ -1,11 +1,13 @@
-#homeWRapper {
+#homeWrapper {
 	position: relative;
 	display: flex;
 	flex-direction: row;
+	margin-top: 40px
 }
 
 #text {
 	width: 39.3%;
+	min-height: 900px;
 	display: inline-block;
 	order: 0;
 	padding-top: 60px;
@@ -56,11 +58,14 @@ button{
 .img{
 	display: inline-block;
 	position: relative;
-	width: 84%;
+	width: 56.1%;
 	/*height: 806px;*/
-	left: 17%;
-	bottom: 420px;
+	/*left: 19%;*/
+	/*top: 85px;*/
 	order: 1;
 	/*top: 109px;*/
 
+}
+img {
+	width: 100%;
 }
