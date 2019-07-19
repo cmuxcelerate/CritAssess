@@ -70,7 +70,7 @@ export const questions: Question[][] = [
 			// answers
 			[
 				new Answer("Because Solution 1 has a higher score than Solution 2 in Requirement A", true),
-				new Answer("Because Solution 2 has a higher score than it does in Solution 1 in Requirement C", false),
+				new Answer("Because Solution 2 has a higher score than Solution 1 in Requirement C", false),
 				new Answer("Because Solution 1 has a higher score in Requirement D than it does in Requirement B", false),
 				new Answer("Because Solution 2 has a higher score in Requirement D than it does in Requirement C", true),
 			],

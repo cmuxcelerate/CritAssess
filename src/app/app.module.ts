@@ -43,7 +43,7 @@ import { SelectAllComponent } from './assessment_view/question_type_templates/se
     Scenario5Component,
     Scenario6Component,
     Scenario7Component,
-    SelectAllComponent
+    SelectAllComponent,
   ],
   imports: [
     BrowserModule,
