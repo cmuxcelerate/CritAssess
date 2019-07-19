@@ -1,0 +1,60 @@
+.flexcontainer{
+    margin-left:21%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:-20px;
+    width:20%;
+}
+.flexitem{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.015em;
+    color: #FFFFFF;
+}
+
+#footerWrapper {
+	display: block;
+	position: fixed;
+	width: 100%;
+	/*margin: 20px;*/
+	height: 78px;
+    background-color: #6840CC;
+    bottom:0px;
+}
+
+.logotext{
+    position: relative;
+	width: 397px;
+	height: 22px;
+	padding-left: 1%;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 23px;
+    letter-spacing: 0.05em;
+    margin-top:30px;
+	color: #FFF;
+}
+.logo{
+    position: relative;
+    width: 21px;
+    height: 16px;
+    margin-left: 4.5%;
+    margin-top:30px;
+}
+
+.teamlogo{
+    position:relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    letter-spacing: 0.015em;
+
+    color: #C4C4C4;
+    left:87%;
+    margin-top:-10px;
+}

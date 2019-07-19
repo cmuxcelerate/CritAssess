@@ -1,35 +1,13 @@
 <div id="homeWrapper">
-	<div id="topRow">
-		<div id="leftColumn">
-			Heading
-			<p>What is Critical thinking? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-			</p>
-			<a routerLink="/test" id="testLink">
-				<button>Take the Test</button>
-			</a>
-
-		</div>	
-		<div id="rightColumn">
-			Big Picture
-		</div>
+	<div class="text">
+		<p class="boldtext">Test your 
+		critical thinking abilities></p>
+		<p class="introtext">Accelerate your career by being an expert critical thinker</p>
+		<button>TAKE TEST</button>
 	</div>
 
-	<div id="bottomRow">
-		<h3>What we offer</h3>
-		<div id="offerings">
-			<div id="offer1">
-				
-			</div>
-			<div id="offer2">
-				
-			</div>
-			<div id="offer3">
-				
-			</div>
-		</div>
+	<div class="img">
+		<img src="../assets/landing3.svg">
 	</div>
-
-
-	<app-mcq *ngFor="let question of assessment.questions" [question]="question"></app-mcq>
 
 </div>
