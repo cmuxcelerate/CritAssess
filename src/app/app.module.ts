@@ -22,6 +22,7 @@ import { Scenario5Component } from './assessment_view/scenarios/scenario5/scenar
 import { Scenario6Component } from './assessment_view/scenarios/scenario6/scenario6.component';
 import { Scenario7Component } from './assessment_view/scenarios/scenario7/scenario7.component';
 import { SelectAllComponent } from './assessment_view/question_type_templates/select-all/select-all.component';
+import { FooterComponent } from './home/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { SelectAllComponent } from './assessment_view/question_type_templates/se
     Scenario5Component,
     Scenario6Component,
     Scenario7Component,
-    SelectAllComponent
+    SelectAllComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
