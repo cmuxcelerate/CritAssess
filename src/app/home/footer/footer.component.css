@@ -17,12 +17,12 @@
 
 #footerWrapper {
 	display: block;
-	position: fixed;
+	position: relative;
 	width: 100%;
 	/*margin: 20px;*/
 	height: 78px;
     background-color: #6840CC;
-    bottom:0px;
+    /*bottom:0px;*/
 }
 
 .logotext{
@@ -47,14 +47,13 @@
 }
 
 .teamlogo{
-    position:relative;
-    font-family: Roboto;
+    position: absolute;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
     letter-spacing: 0.015em;
-
     color: #C4C4C4;
-    left:87%;
-    margin-top:-10px;
+    vertical-align: middle;
+    right: 20px;
+    top: 36px;
 }
