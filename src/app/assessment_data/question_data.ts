@@ -26,12 +26,12 @@ export const questions: Question[][] = [
 		// S1Q2
 		new Question(
 			"mcq", //type of question
-			"What are the criteria you use when choosing the best solution?", //question prompt
+			"What criteria did you use when choosing the best solution?", //question prompt
 			// answers
 			[
 				new Answer("Develop the most time-consuming functions first to make sure that the hardest-to-do ones could be done.", false),
 				new Answer("Start with the high-priority functions that require the most time.", true),
-				new Answer("Use the highest estimate of the required time as time estimate and try to balance the number of most time-consuming and least time-consuming functions.", true),
+				new Answer("Use the highest estimate of the required time as the time estimate and try to balance the number of most time-consuming and least time-consuming functions.", true),
 				new Answer("Develop the least time-consuming functions first to make sure that we complete as many functions as possible.", false)
 			],
 
@@ -66,7 +66,7 @@ export const questions: Question[][] = [
 		// S2Q2
 		new Question(
 			"select-all",
-			"Justify the reason for your choice in Question 1 : (Select all that apply)",
+			"Justify the reason for your choice in Question 1 (Select All that Apply):",
 			// answers
 			[
 				new Answer("Because Solution 1 has a higher score than Solution 2 in Requirement A", true),
@@ -86,7 +86,7 @@ export const questions: Question[][] = [
 		// S3Q1
 		new Question(
 			"select-all",
-			"The resources you have at hand only allow you to implement 5 out of the 9 features. According to the information provided above, which 5 features would you choose?",
+			"The resources you have at hand only allow you to implement 5 out of the 9 features. According to the information provided, which 5 features would you choose? (Select All that Apply)",
 			// answers
 			[
 				new Answer("Upload Project Proposal", true),
@@ -107,7 +107,7 @@ export const questions: Question[][] = [
 		// S3Q2
 		new Question(
 			"select-all",
-			"What would be the criteria that helped you make a decision? (Select All that Apply)",
+			"Which criteria helped you make a decision? (Select All that Apply)",
 			// answers
 			[
 				new Answer("Since we are building a minimum viable product, we need to include the most common features that products of this kind should have.", true),
@@ -156,9 +156,9 @@ export const questions: Question[][] = [
 			"According to the information provided above, which strategy would you choose towards fixing the bug for right now and why?",
 			// answers
 			[
-				new Answer("The 100% solution because the 98% good solution still has a slight chance of causing customer downtime. We should do as best as we could at no matter what price.", false),
-				new Answer("The 98% solution, as fixing the bug to be 100% good takes much longer time than 98% good and it’s urgent to launch a new feature to face the changing competition needs, it’s wise to choose the 98% solution for now.", true),
-				new Answer("Leave it there and focus on feature building, since the bug has been there since the first release and has been triggered only once, it’s not on the very urgent. Therefore, we could set it aside and focus on new feature building first.", false),
+				new Answer("The 100% solution because the 98% good solution still has a slight chance of causing customer downtime. We should do our very best no matter the price.", false),
+				new Answer("The 98% solution, because fixing the bug 100% takes much longer than the 98% good solution and it’s urgent to launch a new feature to face the changing competition needs.", true),
+				new Answer("Leave it there and focus on feature building. The bug has been there since the first release and has been triggered only once, so it’s not on the very urgent. Therefore, we can set it aside and focus on new feature building first.", false),
 			],
 			// KC's
 			[
@@ -175,10 +175,10 @@ export const questions: Question[][] = [
 			"What would be the best solution in this situation?",
 			// answers
 			[
-				new Answer("Discuss with your colleagues, trying to figure out a way in 2 days that can improve the efficiency and if necessary, transferring the projects to other people.", false),
-				new Answer("Use agile development process, update your client periodically in these 2 days before the demo show to ensure their acceptance of our changing demo idea.", false),
-				new Answer("Discuss a temporary solution with your manager, making a prototype automation function on the demo show to let the client get the gist of how everything works.", true),
-				new Answer("Push back to high quality, with the risk of leaving the task unfinished, because what’s showing to the client should represent the highest standards of quality of your company.", false)
+				new Answer("Discuss with your colleagues, trying to figure out a way to improve the efficiency in 2 days. If necessary, transfer the projects to other people.", false),
+				new Answer("Using an agile development process, update your client periodically in these 2 days before the demo show to ensure their acceptance of our changing demo idea.", false),
+				new Answer("Discuss a temporary solution with your manager: to make a prototype automation function on the demo show to let the client get the gist of how everything would work without actually building the function.", true),
+				new Answer("Push back on your manager's request, with the risk of leaving the task unfinished, because what’s shown to the client should represent the highest standard of quality of your company.", false)
 			],
 			// KC's
 			[
@@ -194,8 +194,8 @@ export const questions: Question[][] = [
 			[
 				new Answer("Set small goals in advance, determine the expected completion time and maximum completion time, and strictly stick to your original plan in all circumstances.", false),
 				new Answer("Allocate more resources to speed up the progress, or postpone the deadline when the client has unreasonable expectations.", false),
-				new Answer("Convince your client with data and logic that it is not to their benefit to make changes to their request.", false),
-				new Answer("Periodically update your client with your latest progress to exchange views, because the demand may change over time, short sprints can help with acceptance and immediate change rather than wait until the last minute.", true)
+				new Answer("Convince your client with data and logic that it is not to their benefit to change their request.", false),
+				new Answer("Periodically update your client with your latest progress to exchange views. Because the demand may change over time, short sprints can help with acceptance and making immediate changes.", true)
 			],
 			// KC's
 			[

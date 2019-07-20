@@ -2,7 +2,7 @@
 
 <h3>Question {{assessment.question + 1}} of {{assessment.questionGroups[assessment.scenario].length}}</h3>
 <p id="prompt">{{question.prompt}}</p>
-<span>Click on an circle to elect one answer choice. To choose a different anser, click one different circle.</span>
+<span>Click on a circle to select one answer choice. To change your answer, click a different circle.</span>
 
 <div *ngFor="let answer of question.answers; index as i" class="answerChoice">
 	<input id="{{i}}" type="radio" name="{{question.prompt}}" value="{{answer.text}}" (change)="onSelectionChange(answer.text)" [disabled]="assessment.confirmedAnswer">
