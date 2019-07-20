@@ -17,8 +17,8 @@ export const questions: Question[][] = [
 
 			// KC's
 			[
-				"Weighing options",
-				"Identifying Giving Reasons",
+				"1.2",
+				"1.3",
 			],
 			1, // weight (defaults to 1 if skipped)
 
@@ -37,8 +37,8 @@ export const questions: Question[][] = [
 
 			// KC's
 			[
-				"Weighing options",
-				"Thoughtfulness",
+				"1.3",
+				"1.2",
 			],
 
 		), // End S1Q2
@@ -59,7 +59,7 @@ export const questions: Question[][] = [
 			],
 			// KC's
 			[
-				"placeholder"
+				"1.2"
 			]
 		), //End S2Q1
 
@@ -76,7 +76,7 @@ export const questions: Question[][] = [
 			],
 			// KC's
 			[
-				"placeholder"
+				"1.3"
 			]
 		) //End S2Q2
 	], //End Scenario 2
@@ -101,7 +101,7 @@ export const questions: Question[][] = [
 			],
 			// KC's
 			[
-				"placeholder"
+				"1.3"
 			]
 		), //End S3Q1
 		// S3Q2
@@ -121,7 +121,7 @@ export const questions: Question[][] = [
 			],
 			// KC's
 			[
-				"placeholder"
+				"1.2"
 			]
 		) //End 32Q2
 	], //End Scenario 3
@@ -162,7 +162,7 @@ export const questions: Question[][] = [
 			],
 			// KC's
 			[
-				"placeholder"
+				"1.4"
 			]
 		), //End S5Q1
 	], // End Scenario 5
@@ -182,7 +182,7 @@ export const questions: Question[][] = [
 			],
 			// KC's
 			[
-				"placeholder"
+				"1.4"
 			]
 		), // End S6Q1
 
@@ -199,7 +199,7 @@ export const questions: Question[][] = [
 			],
 			// KC's
 			[
-				"placeholder"
+				"1.3"
 			]
 		), // End S6Q2
 	], // End Scenario 6
@@ -219,7 +219,7 @@ export const questions: Question[][] = [
 			],
 			// KC's
 			[
-				"placeholder"
+				"1.2"
 			]
 		), // End S7Q1
 	], // End Scenario 7

@@ -1,5 +1,6 @@
 import { Question } from './question';
-
+import { KnowledgeComponent } from './knowledgeComponent';
+import { kcList } from '../kcList';
 export class Assessment {
 	questionGroups: Question[][]; //Each questionGroup is a list of questions (for a given scenario)
 	scenario: number; //Which scenario learner is currently on (starts at 0)
@@ -24,6 +25,38 @@ export class Assessment {
 				res++;
 			});
 		});
+		return res;
+	}
+
+	get top3KCs(): Array<KnowledgeComponent> {
+		let res = new Array<KnowledgeComponent>();
+		let topScores = [0, 0 , 0]
+		let topIds = [kcList[0].id, kcList[0].id, kcList[0].id];
+		let scores = this.scorePerKC;
+		for (let kcId in scores) {
+			// Find minimum among current top scores
+			let lowestTop = 100;
+			let lowestIndex = null;
+			topScores.forEach((score, scoreIndex) => {
+				if (score < lowestTop) {
+					lowestIndex = scoreIndex;
+					lowestTop = score;
+				}
+			});
+			// If current kc score is bigger than lowest top score, add this kc to top 3
+			if (scores[kcId].score/scores[kcId].count > lowestTop) {
+				topScores.splice(lowestIndex, 1);
+				topIds.splice(lowestIndex, 1);
+				topScores.push(scores[kcId].score/scores[kcId].count);
+				topIds.push(kcId);
+			}
+		}
+
+		// Add top 3 kc's to list
+		kcList.forEach(kc => {
+			if (topIds.indexOf(kc.id) > -1) res.push(kc);
+		});
+		
 		return res;
 	}
 
