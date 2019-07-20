@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AssessmentService } from '../assessment_data/assessment.service';
-import { Assessment } from '../assessment_data/assessment_classes/assessment';
+import { AssessmentService } from '../../assessment_data/assessment.service';
+import { Assessment } from '../../assessment_data/assessment_classes/assessment';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
