@@ -6,9 +6,10 @@ export class Assessment {
 	question: number; //Which question within the scenario learner is currently on (starts at 0)
 	confirmedAnswer: boolean; //Whether learner has hit 'confirm' on this question
 	questionsAnswered: number; //How many questions have been answered so far
+	done: boolean = false; //Whether test is complete
 	constructor(questionGroups: Question[][]) {
 		this.questionGroups = questionGroups;
-		this.scenario = 0;
+		this.scenario = 6;
 		this.question = 0;
 		this.confirmedAnswer = false;
 		this.questionsAnswered = 0;

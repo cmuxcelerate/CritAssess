@@ -13,4 +13,7 @@
 	<app-mcq *ngIf="assessment.questionGroups[assessment.scenario][assessment.question].type=='mcq'" [question]="assessment.questionGroups[assessment.scenario][assessment.question]"></app-mcq>
 	<!-- Show select-all template for select-all questions -->
 	<app-select-all *ngIf="assessment.questionGroups[assessment.scenario][assessment.question].type=='select-all'" [question]="assessment.questionGroups[assessment.scenario][assessment.question]"></app-select-all>
-</div> <!-- End s1q1 -->
+
+	<app-congratulations *ngIf="assessment.done"></app-congratulations>
+</div> <!-- End assessmentPageWrapper -->	
+<!-- Popup window at end of test -->

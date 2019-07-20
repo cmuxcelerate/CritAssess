@@ -56,6 +56,7 @@ export class SelectAllComponent implements OnInit {
 		}
 
 		else {
+			this.assessment.done = true;
 			console.log("Final score:");
 			console.log(this.assessment.scorePerKC);
 		}

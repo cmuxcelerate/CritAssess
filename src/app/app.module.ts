@@ -22,6 +22,8 @@ import { Scenario7Component } from './assessment_view/scenarios/scenario7/scenar
 import { McqComponent } from './assessment_view/question_type_templates/mcq/mcq.component';
 import { SelectAllComponent } from './assessment_view/question_type_templates/select-all/select-all.component';
 import { GlossaryComponent } from './assessment_view/scenarios/glossary/glossary.component';
+import { CongratulationsComponent } from './assessment_view/congratulations/congratulations.component';
+import { ReportComponent } from './post-test_pages/report/report.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { GlossaryComponent } from './assessment_view/scenarios/glossary/glossary
     SelectAllComponent,
     FooterComponent,
     GlossaryComponent,
+    CongratulationsComponent,
+    ReportComponent,
   ],
   imports: [
     BrowserModule,

@@ -21,3 +21,11 @@ app-mcq, app-select-all {
 	padding-left: 51px;
 	width: 45.4%;
 }
+
+app-congratulations {
+	display: block;
+	position: absolute;
+	width: 29.7%;
+	top: 50px;
+	margin-left: 31.15%;
+}
