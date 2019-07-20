@@ -24,6 +24,8 @@ import { SelectAllComponent } from './assessment_view/question_type_templates/se
 import { GlossaryComponent } from './assessment_view/scenarios/glossary/glossary.component';
 import { CongratulationsComponent } from './assessment_view/congratulations/congratulations.component';
 import { ReportComponent } from './post-test_pages/report/report.component';
+import { ReportNavbarComponent } from './post-test_pages/report/report-navbar/report-navbar.component';
+import { SkillCardComponent } from './post-test_pages/report/skill-card/skill-card.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { ReportComponent } from './post-test_pages/report/report.component';
     GlossaryComponent,
     CongratulationsComponent,
     ReportComponent,
+    ReportNavbarComponent,
+    SkillCardComponent,
   ],
   imports: [
     BrowserModule,
