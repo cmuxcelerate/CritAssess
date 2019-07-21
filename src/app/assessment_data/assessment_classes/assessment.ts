@@ -30,35 +30,55 @@ export class Assessment {
 
 	get top3KCs(): Array<KnowledgeComponent> {
 		let res = new Array<KnowledgeComponent>();
-		let topScores = [0, 0 , 0]
-		let topIds = [kcList[0].id, kcList[0].id, kcList[0].id];
-		let scores = this.scorePerKC;
-		for (let kcId in scores) {
-			// Find minimum among current top scores
-			let lowestTop = 100;
-			let lowestIndex = null;
-			topScores.forEach((score, scoreIndex) => {
-				if (score < lowestTop) {
-					lowestIndex = scoreIndex;
-					lowestTop = score;
-				}
-			});
-			// If current kc score is bigger than lowest top score, add this kc to top 3
-			if (scores[kcId].score/scores[kcId].count > lowestTop) {
-				topScores.splice(lowestIndex, 1);
-				topIds.splice(lowestIndex, 1);
-				topScores.push(scores[kcId].score/scores[kcId].count);
-				topIds.push(kcId);
-			}
-		}
-
-		// Add top 3 kc's to list
-		kcList.forEach(kc => {
-			if (topIds.indexOf(kc.id) > -1) res.push(kc);
+		// Sort kc list
+		kcList.sort(function sortKCsByScore(kc1, kc2) {
+			return kc2.score - kc1.score;
 		});
-		
+		res.push(kcList[0], kcList[1], kcList[2]);
 		return res;
 	}
+
+	get bottom3KCs(): Array<KnowledgeComponent> {
+		let res = new Array<KnowledgeComponent>();
+		// Sort kc list
+		kcList.sort(function sortKCsByScore(kc1, kc2) {
+			return kc2.score - kc1.score;
+		});
+		res.push(kcList[kcList.length - 1], kcList[kcList.length - 2], kcList[kcList.length - 3]);
+		return res;
+	}
+
+	// get top3KCs(): Array<KnowledgeComponent> {
+	// 	let res = new Array<KnowledgeComponent>();
+	// 	let topScores = [0, 0 , 0]
+	// 	let topIds = [kcList[0].id, kcList[0].id, kcList[0].id];
+	// 	let scores = this.scorePerKC;
+	// 	for (let kcId in scores) {
+	// 		// Find minimum among current top scores
+	// 		let lowestTop = 100;
+	// 		let lowestIndex = null;
+	// 		topScores.forEach((score, scoreIndex) => {
+	// 			if (score < lowestTop) {
+	// 				lowestIndex = scoreIndex;
+	// 				lowestTop = score;
+	// 			}
+	// 		});
+	// 		// If current kc score is bigger than lowest top score, add this kc to top 3
+	// 		if (scores[kcId].score/scores[kcId].count > lowestTop) {
+	// 			topScores.splice(lowestIndex, 1);
+	// 			topIds.splice(lowestIndex, 1);
+	// 			topScores.push(scores[kcId].score/scores[kcId].count);
+	// 			topIds.push(kcId);
+	// 		}
+	// 	}
+
+	// 	// Add top 3 kc's to list
+	// 	kcList.forEach(kc => {
+	// 		if (topIds.indexOf(kc.id) > -1) res.push(kc);
+	// 	});
+
+	// 	return res;
+	// }
 
 	// Returns dictionary with scores & counts for each kc
 		// e.g. 
@@ -91,6 +111,12 @@ export class Assessment {
 				}); //End question.kcs.forEach()
 			}); //End questionGroup.forEach()
 		}); //End questionGroups.forEach()
+
+		// assign score to each kc in kcList
+		kcList.forEach(kc => {
+			kc.score = res[kc.id]['score']/res[kc.id]['count'];
+		});
+
 		return res;
 	} //End scorePerKC()
 }

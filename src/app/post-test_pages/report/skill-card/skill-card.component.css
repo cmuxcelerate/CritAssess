@@ -4,6 +4,7 @@
 	box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.45);
 	border-radius: 6px;
 	margin-bottom: 130px;
+	height: 500px;
 }
 h3 {
 	font-weight: 500;
@@ -12,7 +13,7 @@ h3 {
 	text-align: center;
 	letter-spacing: 0.05em;
 	margin-bottom: 20px;
-	padding-top: 20px;
+	padding-top: 40px;
 }
 
 p {
@@ -39,10 +40,35 @@ h3, p {
 }
 
 #spinnerBackground {
-	display: block;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 	position: relative;
 	width: 160px;
 	height: 160px;
 	border-radius: 50%;
-	border: 2px solid #F7B35C;
+	/*border: 2px solid #F7B35C;*/
 }
+
+#spinnerBackground span {
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 35px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.015em;
+	/*color: #FF5819;*/
+}
+
+#spinnerFill {
+	display: block;
+	position: absolute;
+}
+/*.praise {
+	color: #FF5819;
+}
+.advice {
+	color: 
+}*/

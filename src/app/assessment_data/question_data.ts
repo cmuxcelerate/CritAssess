@@ -219,7 +219,9 @@ export const questions: Question[][] = [
 			],
 			// KC's
 			[
-				"1.2"
+				"1.2",
+				"1.3",
+				"1.4"
 			]
 		), // End S7Q1
 	], // End Scenario 7

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { KnowledgeComponent } from '../../../assessment_data/assessment_classes/knowledgeComponent';
 
 @Component({
   selector: 'app-skill-card',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillCardComponent implements OnInit {
 
-  constructor() { }
+	@Input() kc: KnowledgeComponent;
+	@Input() isTopSkill: boolean;
 
-  ngOnInit() {
-  }
+	constructor() { }
+
+	ngOnInit() {
+	}
 
 }

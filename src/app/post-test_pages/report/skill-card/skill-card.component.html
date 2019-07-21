@@ -1,15 +1,21 @@
 <div id="skillCardWrapper">
-	<h3>Assessing priority & importance of product features</h3>
+	<h3>{{kc.description}}</h3>
 
 	<div id="spinnerWrapper">
-		<div id="spinnerBackground">
+		<div id="spinnerBackground" [ngStyle]="{'border': isTopSkill ? '2px solid #F7B35C' : '2px solid #9BD0EF'}">
 			<div id="spinnerFill">
-				
 			</div>
+			<span [ngStyle]="{'color': isTopSkill ? '#FF5819': '#3229B1'}">
+				{{kc.score*100 | number: '1.0-0'}}%
+			</span>
 		</div>
 	</div> <!-- End spinnerWrapper -->
 
-	<p>
-		You did a good job in accurately assessing the priority or importance of product features in a job scenario situated in a technical context and planning accordingly. 
+	<p *ngIf="isTopSkill">
+		{{kc.praise}} 
+	</p>
+
+	<p *ngIf="!isTopSkill">
+		{{kc.advice}}
 	</p>
 </div>

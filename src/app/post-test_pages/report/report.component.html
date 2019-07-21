@@ -12,16 +12,12 @@
 
 		<h1>Top three skills</h1>
 		<div id="topSkills">
-			<app-skill-card></app-skill-card>
-			<app-skill-card></app-skill-card>
-			<app-skill-card></app-skill-card>
+			<app-skill-card *ngFor="let kc of top3Kcs" [kc]="kc" [isTopSkill]="true"></app-skill-card>
 		</div>
 
 		<h1>Needs improvement</h1>
 		<div id="bottomSkills">
-			<app-skill-card></app-skill-card>
-			<app-skill-card></app-skill-card>
-			<app-skill-card></app-skill-card>
+			<app-skill-card *ngFor="let kc of bottom3Kcs" [kc]="kc" [isTopSkill]="false"></app-skill-card>
 		</div>
 	</div> <!-- End rewportBody -->
 </div> <!-- End reportWrapper -->

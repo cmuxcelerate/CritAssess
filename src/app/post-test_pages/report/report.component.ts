@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AssessmentService } from '../../assessment_data/assessment.service';
+import { KnowledgeComponent } from '../../assessment_data/assessment_classes/knowledgeComponent';
 
 @Component({
   selector: 'app-report',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReportComponent implements OnInit {
 
-  constructor() { }
+	top3Kcs: Array<KnowledgeComponent>;
+	bottom3Kcs: Array<KnowledgeComponent>;
+	get assessment() {
+		return this.assessmentService.assessment;
+	}
 
-  ngOnInit() {
-  }
+	constructor(private assessmentService: AssessmentService) { }
+
+	ngOnInit() {
+		this.top3Kcs = this.assessment.top3KCs;
+		this.bottom3Kcs = this.assessment.bottom3KCs;
+		console.log("initializing report. top 3 kcs:");
+		console.log(this.top3Kcs);
+		console.log(this.bottom3Kcs);
+	}
 
 }
