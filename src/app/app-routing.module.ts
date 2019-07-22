@@ -4,6 +4,7 @@ import { HomeComponent } from './pre-test_pages/home/home.component';
 import { AssessmentPageComponent } from './assessment_view/assessment-page/assessment-page.component';
 import { DirectionsPageComponent } from './pre-test_pages/directions-page/directions-page.component';
 import { ReportComponent } from './post-test_pages/report/report.component';
+import { PostTestPagesComponent } from './post-test_pages/post-test-pages.component';
 // import {TestComponent } from './test/test.component';
 
 const routes: Routes = [
@@ -11,7 +12,8 @@ const routes: Routes = [
 { path: 'home', component: HomeComponent },
 { path: 'assessment', component: AssessmentPageComponent },
 { path: 'directions', component: DirectionsPageComponent },
-{ path: 'report', component: ReportComponent },
+{ path: 'review', component: PostTestPagesComponent },
+{ path: 'review/report', component: ReportComponent },
 ];
 
 @NgModule({

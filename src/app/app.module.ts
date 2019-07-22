@@ -10,7 +10,6 @@ import { AssessmentNavbarComponent } from './assessment_view/assessment-navbar/a
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './pre-test_pages/home/home.component';
 import { DirectionsPageComponent } from './pre-test_pages/directions-page/directions-page.component';
-import { SectionSelectionPageComponent } from './pre-test_pages/section-selection-page/section-selection-page.component';
 import { AssessmentPageComponent } from './assessment_view/assessment-page/assessment-page.component';
 import { Scenario1Component } from './assessment_view/scenarios/scenario1/scenario1.component';
 import { Scenario2Component } from './assessment_view/scenarios/scenario2/scenario2.component';
@@ -24,10 +23,11 @@ import { SelectAllComponent } from './assessment_view/question_type_templates/se
 import { GlossaryComponent } from './assessment_view/scenarios/glossary/glossary.component';
 import { CongratulationsComponent } from './assessment_view/congratulations/congratulations.component';
 import { ReportComponent } from './post-test_pages/report/report.component';
-import { ReportNavbarComponent } from './post-test_pages/report/report-navbar/report-navbar.component';
+import { ReportNavbarComponent } from './post-test_pages/report-navbar/report-navbar.component';
 import { SkillCardComponent } from './post-test_pages/report/skill-card/skill-card.component';
 import { ProgressWheelComponent } from './post-test_pages/report/skill-card/progress-wheel/progress-wheel.component';
 import { ReviewNavigationComponent } from './assessment_view/assessment-navbar/review-navigation/review-navigation.component';
+import { PostTestPagesComponent } from './post-test_pages/post-test-pages.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +37,6 @@ import { ReviewNavigationComponent } from './assessment_view/assessment-navbar/r
     McqComponent,
     AssessmentNavbarComponent,
     DirectionsPageComponent,
-    SectionSelectionPageComponent,
     AssessmentPageComponent,
     Scenario1Component,
     Scenario2Component,
@@ -55,6 +54,7 @@ import { ReviewNavigationComponent } from './assessment_view/assessment-navbar/r
     SkillCardComponent,
     ProgressWheelComponent,
     ReviewNavigationComponent,
+    PostTestPagesComponent,
   ],
   imports: [
     BrowserModule,
