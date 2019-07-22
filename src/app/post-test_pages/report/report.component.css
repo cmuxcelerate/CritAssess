@@ -63,8 +63,10 @@ h1 {
 	position: relative;
 	flex-direction: row;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
 }
 
 app-skill-card {
-	width: 28.2%;
+	max-width: 28.2%;
+	min-width: 250px;
 }

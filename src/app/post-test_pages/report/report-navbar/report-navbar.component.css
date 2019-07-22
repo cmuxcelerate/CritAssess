@@ -1,0 +1,31 @@
+#reportNavBarWrapper {
+	width: 100%;
+	border-bottom: 1px solid #CECECE;
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 15px;
+}
+#reportNavBarWrapper a.reportNavLink {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.05em;
+	color: #C4C4C4;
+	text-decoration: inherit;
+	margin-right: 100px;
+	padding-bottom: 10px;
+	box-sizing: border-box;
+}
+
+#reportNavBarWrapper a.reportNavLink.active {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.05em;
+	color: #000000;
+	border-bottom: 5px solid #6840CC;
+}
+
+#reportNavBarWrapper a.reportNavLink:hover {
+	color: #AAA;
+}
