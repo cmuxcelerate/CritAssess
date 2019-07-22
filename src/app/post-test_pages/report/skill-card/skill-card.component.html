@@ -2,9 +2,8 @@
 	<h3>{{kc.description}}</h3>
 
 	<div id="spinnerWrapper">
-		<div id="spinnerBackground" [ngStyle]="{'border': isTopSkill ? '2px solid #F7B35C' : '2px solid #9BD0EF'}">
-			<div id="spinnerFill">
-			</div>
+		<div id="spinnerBackground">
+			<app-progress-wheel radius="90" percent="90" [isTopSkill]="isTopSkill"></app-progress-wheel>
 			<span [ngStyle]="{'color': isTopSkill ? '#FF5819': '#3229B1'}">
 				{{kc.score*100 | number: '1.0-0'}}%
 			</span>

@@ -52,6 +52,7 @@ h3, p {
 }
 
 #spinnerBackground span {
+	position: absolute;
 	font-weight: 500;
 	font-size: 30px;
 	line-height: 35px;
