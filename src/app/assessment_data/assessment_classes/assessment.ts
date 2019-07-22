@@ -10,7 +10,7 @@ export class Assessment {
 	done: boolean = false; //Whether test is complete
 	constructor(questionGroups: Question[][]) {
 		this.questionGroups = questionGroups;
-		this.scenario = 0;
+		this.scenario = 2;
 		this.question = 0;
 		this.confirmedAnswer = false;
 		this.questionsAnswered = 0;

@@ -28,6 +28,7 @@ span:hover::before {
 	font-size: 15px;
 	line-height: 150%;
 	letter-spacing: 0.05em;
+	z-index: 5;
 
 }
 /*Little triangle makes definition look like speech bubble*/
@@ -41,5 +42,6 @@ span:hover::after {
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
 	border-bottom: 15px solid #FFF;
+	z-index: 6;
 	/*box-shadow: 0px -2px 3px rgba(0, 0, 0, 0.25);*/
 }
