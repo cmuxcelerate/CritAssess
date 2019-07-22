@@ -5,7 +5,7 @@ svg	{
 
 #bar {
 	stroke-dashoffset: 0;
-	transition: stroke-dashoffset 1s linear;
+	transition: all 1s linear;
 	stroke-width: 1em;
 	/*stroke: #FF9F1E;*/
 }
@@ -14,7 +14,7 @@ svg	{
 	z-index: 2;
 	position: absolute;
 	stroke-dashoffset: 0;
-	transition: stroke-dashoffset 1s linear;
+	transition: all 1s linear;
 	stroke: #666;
 	stroke-width: .2em;
 }
