@@ -14,7 +14,8 @@ export const questions: Question[][] = [
 				new Answer("F, A, C", false),
 				new Answer("B, E, F", false)
 			],
-
+			// Feedback
+			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
 			// KC's
 			[
 				"1.2",
@@ -34,7 +35,8 @@ export const questions: Question[][] = [
 				new Answer("Use the highest estimate of the required time as the time estimate and try to balance the number of most time-consuming and least time-consuming functions.", true),
 				new Answer("Develop the least time-consuming functions first to make sure that we complete as many functions as possible.", false)
 			],
-
+			// Feedback
+			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
 			// KC's
 			[
 				"1.3",
@@ -57,6 +59,8 @@ export const questions: Question[][] = [
 				new Answer("Requirement C > Requirement D > Requirement A > Requirement B", false),
 				new Answer("Requirement D > Requirement B > Requirement C > Requirement A", false)
 			],
+			// Feedback
+			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
 			// KC's
 			[
 				"1.2"
@@ -74,6 +78,8 @@ export const questions: Question[][] = [
 				new Answer("Because Solution 1 has a higher score in Requirement D than it does in Requirement B", false),
 				new Answer("Because Solution 2 has a higher score in Requirement D than it does in Requirement C", true),
 			],
+			// Feedback
+			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
 			// KC's
 			[
 				"1.3"
@@ -99,6 +105,8 @@ export const questions: Question[][] = [
 				new Answer("Upload Self-reflection", true),
 				new Answer("Receive a Detailed Achievement Report", true)
 			],
+			// Feedback
+			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
 			// KC's
 			[
 				"1.3"
@@ -119,6 +127,8 @@ export const questions: Question[][] = [
 				new Answer("We should include “Add collaborators” since none of our competitors have this feature.", false),
 				new Answer("We should include “Make Audio Comments” since it would save the teachers some time for grading.", false)
 			],
+			// Feedback
+			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
 			// KC's
 			[
 				"1.2"
@@ -141,6 +151,8 @@ export const questions: Question[][] = [
 				new Answer("Which demographics use the messaging feature most?", false),
 				new Answer("Has the change in usage differed across demographics?", true),
 			],
+			// Feedback
+			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
 			// KC's
 			[
 				"placeholder"
@@ -160,6 +172,8 @@ export const questions: Question[][] = [
 				new Answer("The 98% solution, because fixing the bug 100% takes much longer than the 98% good solution and it’s urgent to launch a new feature to face the changing competition needs.", true),
 				new Answer("Leave it there and focus on feature building. The bug has been there since the first release and has been triggered only once, so it’s not on the very urgent. Therefore, we can set it aside and focus on new feature building first.", false),
 			],
+			// Feedback
+			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
 			// KC's
 			[
 				"1.4"
@@ -180,6 +194,8 @@ export const questions: Question[][] = [
 				new Answer("Discuss a temporary solution with your manager: to make a prototype automation function on the demo show to let the client get the gist of how everything would work without actually building the function.", true),
 				new Answer("Push back on your manager's request, with the risk of leaving the task unfinished, because what’s shown to the client should represent the highest standard of quality of your company.", false)
 			],
+			// Feedback
+			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
 			// KC's
 			[
 				"1.4"
@@ -197,6 +213,8 @@ export const questions: Question[][] = [
 				new Answer("Convince your client with data and logic that it is not to their benefit to change their request.", false),
 				new Answer("Periodically update your client with your latest progress to exchange views. Because the demand may change over time, short sprints can help with acceptance and making immediate changes.", true)
 			],
+			// Feedback
+			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
 			// KC's
 			[
 				"1.3"
@@ -217,6 +235,8 @@ export const questions: Question[][] = [
 				new Answer("I would encourage the technical team to pursue the technical advancement, because the complex model makes the perfect prediction.", false),
 				new Answer("I would encourage the technical team to pursue the technical advancement and ask the sales team to try to come up with a different interpretation of the results generated by the advanced algorithm.", false)
 			],
+			// Feedback
+			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
 			// KC's
 			[
 				"1.2",

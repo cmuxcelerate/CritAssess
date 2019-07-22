@@ -4,15 +4,17 @@ export class Question {
 	// header: string;
 	prompt: string;
 	answers: Answer[];
+	feedback: string; // Displayed when reviewing this question
 	// studentAnswers: Boolean[]; //For each answer, whether that answer is selected
 	weight: number; //Value of this question
 	kcs: string[];
 
-	constructor(type:string, prompt: string, answers:Answer[], kcs?: string[], weight?: number) {
+	constructor(type:string, prompt: string, answers:Answer[], feedback: string, kcs?: string[], weight?: number) {
 		this.type = type;
 		// this.header = header;
 		this.answers = answers;
 		this.prompt = prompt;
+		this.feedback = feedback;
 		if (this.weight != undefined) {
 			this.weight = weight;
 		} else {

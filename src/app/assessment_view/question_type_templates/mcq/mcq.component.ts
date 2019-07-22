@@ -10,6 +10,7 @@ import { AssessmentService } from '../../../assessment_data/assessment.service';
 export class McqComponent implements OnInit {
 
 	@Input() question: Question;
+	selectedAnswer: string = "";
 
 	onSelectionChange(selectedText) {
 		this.question.answers.forEach(answer => {

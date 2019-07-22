@@ -8,9 +8,10 @@ export class Assessment {
 	confirmedAnswer: boolean; //Whether learner has hit 'confirm' on this question
 	questionsAnswered: number; //How many questions have been answered so far
 	done: boolean = false; //Whether test is complete
+	reviewing: boolean = false; //Whether user is reviewing feedback
 	constructor(questionGroups: Question[][]) {
 		this.questionGroups = questionGroups;
-		this.scenario = 2;
+		this.scenario = 6;
 		this.question = 0;
 		this.confirmedAnswer = false;
 		this.questionsAnswered = 0;

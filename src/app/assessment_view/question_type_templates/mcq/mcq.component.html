@@ -5,11 +5,21 @@
 <span>Click on a circle to select one answer choice. To change your answer, click a different circle.</span>
 
 <div *ngFor="let answer of question.answers; index as i" class="answerChoice">
-	<input id="{{i}}" type="radio" name="{{question.prompt}}" value="{{answer.text}}" (change)="onSelectionChange(answer.text)" [disabled]="assessment.confirmedAnswer">
+	<input id="{{i}}" (change)="onSelectionChange(answer.text)" [checked]="answer.selected" type="radio" name="{{question.prompt}}" value="{{answer.text}}" [disabled]="assessment.confirmedAnswer">
 	<label for="{{i}}">{{answer.text}}</label>
+	<img *ngIf="assessment.reviewing && answer.correct" src="./assets/check-mark.png">
+	<img *ngIf="assessment.reviewing && answer.selected && !answer.correct" src="./assets/red-x.png">
 </div>
 
+<div id="feedback" *ngIf="assessment.reviewing">
+	<!-- <div id="feedbackBackground"></div> -->
+	<strong>Explanation:</strong> 
+	<p>
+		{{question.feedback}}
+	</p>
+</div>
 <div id="buttonRow">
-	<button id="confirm" [disabled]="assessment.confirmedAnswer || !answerIsSelected" (click)="submitAnswer()">Confirm</button>
-	<button id="continue" [disabled]="!assessment.confirmedAnswer" (click)="nextQuestion()">Continue</button>
+	<button *ngIf="!assessment.reviewing" id="confirm" [disabled]="assessment.confirmedAnswer || !answerIsSelected" (click)="submitAnswer()">Confirm</button>
+	<button *ngIf="!assessment.reviewing" id="continue" [disabled]="!assessment.confirmedAnswer" (click)="nextQuestion()">Continue</button>
+	<button *ngIf="assessment.reviewing" (click)="nextQuestion()">Next Question</button>
 </div>

@@ -4,7 +4,7 @@
 
 
 <div *ngFor="let answer of question.answers; index as i" class="answerChoice">
-	<input id="{{i}}" type="checkbox" name="{{question.prompt}}" value="{{answer.text}}" (change)="onSelectionChange(i)" [disabled]="assessment.confirmedAnswer">
+	<input id="{{i}}" type="checkbox" name="{{question.prompt}}" value="{{answer.text}}" (change)="onSelectionChange(i)" [checked]="answer.selected" [disabled]="assessment.confirmedAnswer">
 	<label for="{{i}}">{{answer.text}}</label>
 </div>
 
