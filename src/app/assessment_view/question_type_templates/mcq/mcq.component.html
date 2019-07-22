@@ -5,7 +5,7 @@
 <span>Click on a circle to select one answer choice. To change your answer, click a different circle.</span>
 
 <div *ngFor="let answer of question.answers; index as i" class="answerChoice">
-	<input id="{{i}}" (change)="onSelectionChange(answer.text)" [checked]="answer.selected" type="radio" name="{{question.prompt}}" value="{{answer.text}}" [disabled]="assessment.confirmedAnswer">
+	<input id="{{i}}" (change)="onSelectionChange(answer.text)" [checked]="answer.selected" type="radio" name="{{question.prompt}}" value="{{answer.text}}" [disabled]="assessment.confirmedAnswer || assessment.reviewing">
 	<label for="{{i}}">{{answer.text}}</label>
 	<img *ngIf="assessment.reviewing && answer.correct" src="./assets/check-mark.png">
 	<img *ngIf="assessment.reviewing && answer.selected && !answer.correct" src="./assets/red-x.png">

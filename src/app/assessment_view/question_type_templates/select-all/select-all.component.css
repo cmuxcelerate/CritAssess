@@ -47,6 +47,7 @@ p {
 	justify-content: center;
 	flex-direction: row;
 	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 #confirm {
@@ -62,7 +63,7 @@ p {
 */
 label {
 	padding-left: 40px;
-	cursor: pointer;
+	/*cursor: pointer;*/
 	padding-left: 36px;
 	line-height: 20px;
 	width: 87.7%;
@@ -102,6 +103,14 @@ input + label::before {
 input:disabled + label::before {
 	cursor: default;
 }
+/*Disable pointer on label when input is disabled*/
+input:disabled + label {
+	cursor: default;
+}
+/*Use pointer cursor when input is enabled*/
+input:enabled + label {
+	cursor: pointer;
+}
 
 /*Background color fill when */
 input:checked + label::before {
@@ -136,4 +145,31 @@ input:checked + label::after {
 input:enabled:hover:not(:checked) + label::before {
   background-color: #DDD;
   /*background-color: #6840CC;*/
+}
+
+/*Check and x marks for correct/incorrect answers during review*/
+.answerChoice img {
+	float: right;
+}
+
+/*Feedback*/
+div#feedback {
+	display: block;
+	position: relative;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 150%;
+	letter-spacing: 0.05em;
+	color: #000000;
+	background:  rgba(104, 64, 204, 0.15);
+	padding: 15px;
+	margin-top: 20px;
+}
+#feedback strong {
+	font-weight: 500;
+}
+
+div#feedback p {
+	display: block;
+	position: relative;
 }

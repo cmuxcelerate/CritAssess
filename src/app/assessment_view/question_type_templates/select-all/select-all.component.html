@@ -4,12 +4,24 @@
 
 
 <div *ngFor="let answer of question.answers; index as i" class="answerChoice">
-	<input id="{{i}}" type="checkbox" name="{{question.prompt}}" value="{{answer.text}}" (change)="onSelectionChange(i)" [checked]="answer.selected" [disabled]="assessment.confirmedAnswer">
+	<input id="{{i}}" type="checkbox" name="{{question.prompt}}" value="{{answer.text}}" (change)="onSelectionChange(i)" [checked]="answer.selected" [disabled]="assessment.confirmedAnswer ||assessment.reviewing">
 	<label for="{{i}}">{{answer.text}}</label>
+	<img *ngIf="assessment.reviewing && answer.correct" src="./assets/check-mark.png">
+	<img *ngIf="assessment.reviewing && answer.selected && !answer.correct" src="./assets/red-x.png">
+</div>
+
+<!-- Feedback -->
+<div id="feedback" *ngIf="assessment.reviewing">
+	<!-- <div id="feedbackBackground"></div> -->
+	<strong>Explanation:</strong> 
+	<p>
+		{{question.feedback}}
+	</p>
 </div>
 
 <div id="buttonRow">
-	<button id="confirm" [disabled]="assessment.confirmedAnswer || !answerIsSelected" (click)="submitAnswer()">Confirm</button>
-	<button id="continue" [disabled]="!assessment.confirmedAnswer" (click)="nextQuestion()">Continue</button>
+	<button id="confirm" *ngIf="!assessment.reviewing" [disabled]="assessment.confirmedAnswer || !answerIsSelected" (click)="submitAnswer()">Confirm</button>
+	<button id="continue" *ngIf="!assessment.reviewing" [disabled]="!assessment.confirmedAnswer" (click)="nextQuestion()">Continue</button>
+	<button *ngIf="assessment.reviewing" (click)="nextQuestion()">Next Question</button>
 	<!-- <button (click)="logScore()">score</button> -->
 </div>
