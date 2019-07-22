@@ -1,24 +1,28 @@
 <div id="assessmentNavbarWrapper">
-	<div id="pauseTestWrapper" class="navbarGroup">
-		<img src="./assets/log_out.png">
-		<span>Pause Test</span>
-	</div>
-
-	<div id="timerWrapper" class="navbarGroup" (click)="toggleTimer()">
-		<img src="./assets/clock.png">
-		<span [ngStyle]="{'display': showTimer ? 'block' : 'none'}">{{assessmentMinutes}}:{{assessmentSeconds}}</span>
-		<span [ngStyle]="{'display': !showTimer ? 'block' : 'none'}" class="timerLabel">Show Timer</span>
-	</div>
-
-	<div id="progressBarWrapper" class="navbarGroup">
-		<div id="progressBarBackground">
-			<div id="progressBarFilling" [ngStyle]="{'width': assessment.questionsAnswered/assessment.questionCount * 100 + '%'}"></div>
+	<div id="assessmentNavbarBody">
+		<div id="pauseTestWrapper" class="navbarGroup">
+			<img src="./assets/log_out.png">
+			<span>Pause Test</span>
 		</div>
-		<div id="progressLabelsWrapper">
-			<!-- Labels -->
-			<span>Progress</span>
-			<span>{{assessment.questionsAnswered == assessment.questionCount ? '100%':(assessment.questionsAnswered/assessment.questionCount * 100 + '').substring(0, 2) + '%'}}</span><!-- 
-			 -->
+
+		<div id="timerWrapper" class="navbarGroup" (click)="toggleTimer()" *ngIf="!assessment.reviewing">
+			<img src="./assets/clock.png">
+			<span [ngStyle]="{'display': showTimer ? 'block' : 'none'}">{{assessmentMinutes}}:{{assessmentSeconds}}</span>
+			<span [ngStyle]="{'display': !showTimer ? 'block' : 'none'}" class="timerLabel">Show Timer</span>
 		</div>
+
+		<div id="progressBarWrapper" class="navbarGroup"  *ngIf="!assessment.reviewing">
+			<div id="progressBarBackground">
+				<div id="progressBarFilling" [ngStyle]="{'width': assessment.questionsAnswered/assessment.questionCount * 100 + '%'}"></div>
+			</div>
+			<div id="progressLabelsWrapper">
+				<!-- Labels -->
+				<span>Progress</span>
+				<span>{{assessment.questionsAnswered == assessment.questionCount ? '100%':(assessment.questionsAnswered/assessment.questionCount * 100 + '').substring(0, 2) + '%'}}</span><!-- 
+				 -->
+			</div>
+		</div> <!-- End Progress bar -->
+
+		<app-review-navigation *ngIf="assessment.reviewing"></app-review-navigation>
 	</div>
 </div> <!-- End navbar wrapper -->

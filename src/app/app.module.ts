@@ -27,6 +27,7 @@ import { ReportComponent } from './post-test_pages/report/report.component';
 import { ReportNavbarComponent } from './post-test_pages/report/report-navbar/report-navbar.component';
 import { SkillCardComponent } from './post-test_pages/report/skill-card/skill-card.component';
 import { ProgressWheelComponent } from './post-test_pages/report/skill-card/progress-wheel/progress-wheel.component';
+import { ReviewNavigationComponent } from './assessment_view/assessment-navbar/review-navigation/review-navigation.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { ProgressWheelComponent } from './post-test_pages/report/skill-card/prog
     ReportNavbarComponent,
     SkillCardComponent,
     ProgressWheelComponent,
+    ReviewNavigationComponent,
   ],
   imports: [
     BrowserModule,

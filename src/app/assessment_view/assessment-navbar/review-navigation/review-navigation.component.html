@@ -1,0 +1,8 @@
+<div id="reviewNavWrapper">
+	<div *ngFor="let questionData of questions;index as index" class="questionLink" (click)="goToQuestion(questionData[0], questionData[1], index)">
+		<div class="circle" [ngClass]="{'currentQuestion': currentIndex == index}">{{index + 1}}</div>
+		<!-- Check Mark -->
+		<img *ngIf="assessment.questionGroups[questionData[0]][questionData[1]].score == assessment.questionGroups[questionData[0]][questionData[1]].weight" src="./assets/check-mark.png">
+		<img *ngIf="assessment.questionGroups[questionData[0]][questionData[1]].score != assessment.questionGroups[questionData[0]][questionData[1]].weight" src="./assets/red-x.png">
+	</div>
+</div>

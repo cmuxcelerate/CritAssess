@@ -11,7 +11,7 @@ export class Assessment {
 	reviewing: boolean = false; //Whether user is reviewing feedback
 	constructor(questionGroups: Question[][]) {
 		this.questionGroups = questionGroups;
-		this.scenario = 3;
+		this.scenario = 0;
 		this.question = 0;
 		this.confirmedAnswer = false;
 		this.questionsAnswered = 0;

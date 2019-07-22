@@ -1,0 +1,37 @@
+#reviewNavWrapper {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.questionLink {
+	margin-left: 12px;
+	cursor: pointer;
+}
+.circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 14px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.015em;
+
+	width: 25px;
+	height: 25px;
+	border: 2px solid #6840CC;
+	border-radius: 50%;
+}
+.currentQuestion {
+	background-color: #6840CC;
+	color: #FFF;
+}
+img {
+	width: 17px;
+	height: 17px;
+	margin-left: 8px;
+}

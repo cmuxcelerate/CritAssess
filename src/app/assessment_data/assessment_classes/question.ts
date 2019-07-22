@@ -55,7 +55,7 @@ export class Question {
 					break;
 			}
 		});
-		score = score/this.answers.length * this.weight;
+		if (this.type == "select-all") score = score/this.answers.length * this.weight;
 		return score;
 	}
 }

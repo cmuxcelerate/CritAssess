@@ -32,7 +32,7 @@ export const questions: Question[][] = [
 			[
 				new Answer("Develop the most time-consuming functions first to make sure that the hardest-to-do ones could be done.", false),
 				new Answer("Start with the high-priority functions that require the most time.", true),
-				new Answer("Use the highest estimate of the required time as the time estimate and try to balance the number of most time-consuming and least time-consuming functions.", true),
+				new Answer("Use the highest estimate of the required time as the time estimate and try to balance the number of most time-consuming and least time-consuming functions.", false),
 				new Answer("Develop the least time-consuming functions first to make sure that we complete as many functions as possible.", false)
 			],
 			// Feedback
