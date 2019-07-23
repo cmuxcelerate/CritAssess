@@ -13,10 +13,14 @@ const routes: Routes = [
 { path: 'home', component: HomeComponent },
 { path: 'assessment', component: AssessmentPageComponent },
 { path: 'directions', component: DirectionsPageComponent },
-{ path: 'review', component: PostTestPagesComponent },
+{ path: 'review', component: PostTestPagesComponent, 
+	children: [
+		{ path: 'overview', component: OverviewComponent },
+		{ path: 'report', component: ReportComponent },
+		{ path: '', redirectTo: 'overview', pathMatch: 'full' },
+	]
+},
 
-{ path: 'review/overview', component: OverviewComponent },
-{ path: 'review/report', component: ReportComponent },
 ];
 
 @NgModule({

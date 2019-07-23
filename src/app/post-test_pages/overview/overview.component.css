@@ -6,6 +6,9 @@
 	/*border: 2px solid black;*/
 	grid-template-columns: [v0] 33% [v1] 33% [v2] 33% [v3];
 	grid-template-rows: [h0] auto [h1] auto [h2];
+	grid-column-gap: 20px;
+	grid-row-gap: 25px;
+	margin-bottom: 60px;
 }
 
 .overviewCard {

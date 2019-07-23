@@ -1,0 +1,48 @@
+#title {
+	display: block;
+	position: relative;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+#sections {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 45px;
+}
+
+.imgWrap {
+	position: relative;
+	width: 30%;
+}
+img {
+	width: 100%;
+}
+
+h1 {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 15px;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+}
+span {
+	font-weight: 500;
+	font-size: 8px;
+	line-height: 9px;
+	text-align: center;
+	letter-spacing: 0.04em;
+	color: #FFFFFF;
+	padding: 8px;
+	background: rgba(255, 255, 255, 0.14);
+	border-radius: 18px;
+}
+.sectionText {
+	display: block;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
