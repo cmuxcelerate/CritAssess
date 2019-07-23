@@ -1,39 +1,38 @@
 #navbarWrapper {
-	display: block;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	position: relative;
 	width: 100%;
-	/*margin: 20px;*/
 	height: 52px;
 	background-color: #6840CC;
 }
 
-span {
-	position: relative;
-	width: 397px;
-	height: 22px;
-	padding-left: 1%;
-	top: 17px;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 20px;
-	line-height: 23px;
-	letter-spacing: 0.05em;
-	color: #FFF;
-}
+	#logoWrapper {
+		margin-left: 4.5%;
+	}
+		span {
+			position: relative;
+			width: 397px;
+			height: 22px;
+			margin-left: 20px;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 23px;
+			letter-spacing: 0.05em;
+			color: #FFF;
+		}
 
-.logo{
-	position: relative;
-	width: 21px;
-	height: 16px;
-	margin-left: 4.5%;
-	top: 19px;
-}
+		.logo{
+			position: relative;
+			width: 21px;
+			height: 16px;
+		}
 
-.account{
-	position: relative;
-	width: 21px;
-	height: 21px;
-	margin-left: 73.5%;
-	/*left: 50%;*/
-	top: 23px;
-}
+	.account{
+		position: relative;
+		width: 21px;
+		height: 21px;
+		margin-right: 10.5%;
+	}
