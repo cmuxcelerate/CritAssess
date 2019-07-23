@@ -60,10 +60,12 @@ export const questions: Question[][] = [
 				new Answer("Requirement D > Requirement B > Requirement C > Requirement A", false)
 			],
 			// Feedback
-			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+			"Because Jackie chose solution 1, we know that solution 1 should have a higher score than solution 2 in the requirements she cares about most. While we don’t know for certain whether Jackie values Requirement A or Requirement B more, we know that she must prioritize these two more than Requirements B or C because Solution 1 has the higher score in both Requirement A and Requirement B.",
 			// KC's
 			[
-				"1.2"
+				"1.2",
+				"2.3",
+				"3.1"
 			]
 		), //End S2Q1
 
@@ -79,7 +81,7 @@ export const questions: Question[][] = [
 				new Answer("Because Solution 2 has a higher score in Requirement D than it does in Requirement C", true),
 			],
 			// Feedback
-			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+			"Because Jackie chose solution 1, we know that solution 1 should have a higher score than solution 2 in the requirements she cares about most. While we don’t know for certain whether Jackie values Requirement A or Requirement B more, we know that she must prioritize these two more than Requirements B or C because Solution 1 has the higher score in both Requirement A and Requirement B.",
 			// KC's
 			[
 				"1.3"
