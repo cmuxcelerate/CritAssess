@@ -58,6 +58,7 @@ export class McqComponent implements OnInit {
 			console.log("Final score:");
 			console.log(this.assessment.scorePerKC);
 			console.log(this.assessment.top3KCs);
+			console.log(this.assessment.bottom3KCs);
 		}
 	}
 	constructor(private assessmentService: AssessmentService) { }

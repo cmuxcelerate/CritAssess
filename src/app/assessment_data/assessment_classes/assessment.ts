@@ -114,10 +114,11 @@ export class Assessment {
 		}); //End questionGroups.forEach()
 
 		// assign score to each kc in kcList
+		console.log("writing scores into each kc");
 		kcList.forEach(kc => {
 			kc.score = res[kc.id]['score']/res[kc.id]['count'];
 		});
-
+		console.log(kcList);
 		return res;
 	} //End scorePerKC()
 }
