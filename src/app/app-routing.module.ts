@@ -6,6 +6,7 @@ import { DirectionsPageComponent } from './pre-test_pages/directions-page/direct
 import { ReportComponent } from './post-test_pages/report/report.component';
 import { PostTestPagesComponent } from './post-test_pages/post-test-pages.component';
 import { OverviewComponent } from './post-test_pages/overview/overview.component';
+import { CertificateComponent } from './post-test_pages/certificate/certificate.component';
 // import {TestComponent } from './test/test.component';
 
 const routes: Routes = [
@@ -15,9 +16,11 @@ const routes: Routes = [
 { path: 'directions', component: DirectionsPageComponent },
 { path: 'review', component: PostTestPagesComponent, 
 	children: [
+		{ path: '', redirectTo: 'overview', pathMatch: 'full' },
 		{ path: 'overview', component: OverviewComponent },
 		{ path: 'report', component: ReportComponent },
-		{ path: '', redirectTo: 'overview', pathMatch: 'full' },
+		{ path: 'certificate', component: CertificateComponent },
+
 	]
 },
 
