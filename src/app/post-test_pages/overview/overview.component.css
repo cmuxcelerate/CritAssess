@@ -1,0 +1,39 @@
+#overviewWrapper {
+	display: grid;
+	position: relative;
+	width: 82%;
+	margin-left: 9%;
+	border: 2px solid black;
+	grid-template-columns: [v0] 33% [v1] 33% [v2] 33% [v3];
+	grid-template-rows: [h0] auto [h1] auto [h2];
+}
+
+.overviewCard {
+	box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.25);
+	border: 2px solid black;
+}
+
+app-overview-profile {
+	grid-column: v0 / v1;
+	grid-row: h0 / h1;
+}
+
+app-overview-test-history {
+	grid-column: v1 / v3;
+	grid-row: h0 / h1;
+}
+
+app-overview-progress {
+	grid-column: v0 / v1;
+	grid-row: h1 / h2;
+}
+
+app-overview-test-reports {
+	grid-column: v1 / v2;
+	grid-row: h1 / h2;
+}
+
+app-overview-test-certificate {
+	grid-column: v2 / v3;
+	grid-row: h1 / h2;
+}
