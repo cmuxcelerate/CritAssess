@@ -28,6 +28,13 @@ import { SkillCardComponent } from './post-test_pages/report/skill-card/skill-ca
 import { ProgressWheelComponent } from './post-test_pages/report/skill-card/progress-wheel/progress-wheel.component';
 import { ReviewNavigationComponent } from './assessment_view/assessment-navbar/review-navigation/review-navigation.component';
 import { PostTestPagesComponent } from './post-test_pages/post-test-pages.component';
+import { OverviewComponent } from './post-test_pages/overview/overview.component';
+import { OverviewProfileComponent } from './post-test_pages/overview/overview-profile/overview-profile.component';
+import { OverviewTestHistoryComponent } from './post-test_pages/overview/overview-test-history/overview-test-history.component';
+import { OverviewProgressComponent } from './post-test_pages/overview/overview-progress/overview-progress.component';
+import { OverviewReportsComponent } from './post-test_pages/overview/overview-reports/overview-reports.component';
+import { OverviewCertificateComponent } from './post-test_pages/overview/overview-certificate/overview-certificate.component';
+
 
 @NgModule({
   declarations: [
@@ -55,6 +62,12 @@ import { PostTestPagesComponent } from './post-test_pages/post-test-pages.compon
     ProgressWheelComponent,
     ReviewNavigationComponent,
     PostTestPagesComponent,
+    OverviewComponent,
+    OverviewProfileComponent,
+    OverviewTestHistoryComponent,
+    OverviewProgressComponent,
+    OverviewReportsComponent,
+    OverviewCertificateComponent,
   ],
   imports: [
     BrowserModule,

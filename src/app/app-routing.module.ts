@@ -5,6 +5,7 @@ import { AssessmentPageComponent } from './assessment_view/assessment-page/asses
 import { DirectionsPageComponent } from './pre-test_pages/directions-page/directions-page.component';
 import { ReportComponent } from './post-test_pages/report/report.component';
 import { PostTestPagesComponent } from './post-test_pages/post-test-pages.component';
+import { OverviewComponent } from './post-test_pages/overview/overview.component';
 // import {TestComponent } from './test/test.component';
 
 const routes: Routes = [
@@ -13,6 +14,8 @@ const routes: Routes = [
 { path: 'assessment', component: AssessmentPageComponent },
 { path: 'directions', component: DirectionsPageComponent },
 { path: 'review', component: PostTestPagesComponent },
+
+{ path: 'review/overview', component: OverviewComponent },
 { path: 'review/report', component: ReportComponent },
 ];
 
