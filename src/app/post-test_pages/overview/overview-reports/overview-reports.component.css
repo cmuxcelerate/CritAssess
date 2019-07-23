@@ -27,3 +27,7 @@ p {
 	letter-spacing: 0.05em;
 	color: #6840CC;
 }
+
+a:hover {
+	opacity: .75;
+}

@@ -28,3 +28,6 @@ p {
 	color: #6840CC;
 
 }
+a:hover {
+	opacity: .75;
+}
