@@ -9,6 +9,7 @@ export class Assessment {
 	questionsAnswered: number; //How many questions have been answered so far
 	done: boolean = false; //Whether test is complete
 	reviewing: boolean = false; //Whether user is reviewing feedback
+	flatIndex: number = 0; //Index of current question when all are flattened into one list
 	constructor(questionGroups: Question[][]) {
 		this.questionGroups = questionGroups;
 		this.scenario = 0;
@@ -116,7 +117,12 @@ export class Assessment {
 		// assign score to each kc in kcList
 		console.log("writing scores into each kc");
 		kcList.forEach(kc => {
-			kc.score = res[kc.id]['score']/res[kc.id]['count'];
+			if (res.hasOwnProperty(kc.id)) {
+				kc.score = res[kc.id]['score']/res[kc.id]['count'];
+			}
+			else {
+				kc.score = 0;
+			}
 		});
 		console.log(kcList);
 		return res;

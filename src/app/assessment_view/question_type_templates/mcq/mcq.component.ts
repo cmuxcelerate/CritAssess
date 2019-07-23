@@ -45,12 +45,18 @@ export class McqComponent implements OnInit {
 		if (this.assessment.question < this.assessment.questionGroups[this.assessment.scenario].length - 1) {
 			this.assessment.question++;
 			this.assessment.confirmedAnswer = false;
+			if (this.assessment.reviewing) {
+				this.assessment.flatIndex++;
+			}
 		} 
 		// Otherwise, if there is a next scenario, load it
 		else if (this.assessment.scenario < this.assessment.questionGroups.length - 1) {
 			this.assessment.question = 0;
 			this.assessment.scenario++;
 			this.assessment.confirmedAnswer = false;
+			if (this.assessment.reviewing) {
+				this.assessment.flatIndex++;
+			}
 		}
 
 		else {
