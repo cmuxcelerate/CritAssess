@@ -26,6 +26,13 @@ app-congratulations {
 	display: block;
 	position: absolute;
 	width: 29.7%;
+	min-width: 250px;
 	top: 50px;
 	margin-left: 31.15%;
+}
+
+@media only screen and (max-width: 800px) {
+	app-mcq, app-select-all {
+		width: 34%;
+	}
 }
