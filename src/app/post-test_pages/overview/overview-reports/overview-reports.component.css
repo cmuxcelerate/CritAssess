@@ -1,0 +1,29 @@
+#title {
+	display: block;
+	position: relative;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.row {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+p {
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 170%;
+	letter-spacing: 0.05em;
+}
+
+#reportsWrapper .row a {
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 170%;
+	letter-spacing: 0.05em;
+	color: #6840CC;
+}
