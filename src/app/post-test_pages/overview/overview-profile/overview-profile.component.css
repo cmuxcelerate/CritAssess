@@ -1,0 +1,47 @@
+#title {
+	display: block;
+	position: relative;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+#imgWrap {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	margin-top: 45px;
+	margin-bottom: 20px;
+}
+img	{
+	display: block;
+	position: relative;
+}
+
+#midText {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 55px;
+}
+h2 {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+	letter-spacing: 0.05em;
+}
+
+p {
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+	letter-spacing: 0.05em;	
+}
+
+#stats {
+	display: flex;
+	position: relative;
+	justify-content: space-around;
+}
