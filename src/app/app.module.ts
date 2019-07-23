@@ -34,6 +34,7 @@ import { OverviewTestHistoryComponent } from './post-test_pages/overview/overvie
 import { OverviewProgressComponent } from './post-test_pages/overview/overview-progress/overview-progress.component';
 import { OverviewReportsComponent } from './post-test_pages/overview/overview-reports/overview-reports.component';
 import { OverviewCertificateComponent } from './post-test_pages/overview/overview-certificate/overview-certificate.component';
+import { TestHistorySectionComponent } from './post-test_pages/overview/overview-test-history/test-history-section/test-history-section.component';
 
 
 @NgModule({
@@ -68,6 +69,7 @@ import { OverviewCertificateComponent } from './post-test_pages/overview/overvie
     OverviewProgressComponent,
     OverviewReportsComponent,
     OverviewCertificateComponent,
+    TestHistorySectionComponent,
   ],
   imports: [
     BrowserModule,

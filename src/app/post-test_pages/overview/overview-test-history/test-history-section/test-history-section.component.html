@@ -1,0 +1,14 @@
+<div id="sectionWrapper">
+	<div class="imgWrap">
+		<img src="./assets/section{{section}}.png">
+		<div class="sectionText">
+			<h1>Section {{section | uppercase}}</h1>
+			<div id="sectionLength">
+				<span>{{scenarios}} Scenarios</span>
+				<span>{{duration}}</span>
+			</div>
+		</div>
+	</div> <!-- End imgWrap -->
+	<p id="completionDate">Completion Date: 08/31/2019</p>
+	<a routerLink="/assessment" (click)="goToFeedback()">REVIEW SECTION</a>
+</div> <!-- End section -->

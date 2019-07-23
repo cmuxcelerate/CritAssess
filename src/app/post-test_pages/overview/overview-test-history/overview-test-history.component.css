@@ -12,9 +12,11 @@
 	margin-top: 45px;
 }
 
-.imgWrap {
+app-test-history-section {
 	position: relative;
-	width: 30%;
+	width: 25%;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 img {
 	width: 100%;
