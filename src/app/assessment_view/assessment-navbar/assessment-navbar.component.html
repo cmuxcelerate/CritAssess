@@ -1,9 +1,9 @@
 <div id="assessmentNavbarWrapper">
 	<div id="assessmentNavbarBody">
-		<div id="pauseTestWrapper" class="navbarGroup">
+		<a routerLink="/directions" id="pauseTestWrapper" class="navbarGroup">
 			<img src="./assets/log_out.png">
 			<span>Pause Test</span>
-		</div>
+		</a>
 
 		<div id="timerWrapper" class="navbarGroup" (click)="toggleTimer()" *ngIf="!assessment.reviewing">
 			<img src="./assets/clock.png">

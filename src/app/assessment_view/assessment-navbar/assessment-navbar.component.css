@@ -35,6 +35,16 @@ span {
 }
 
 
+a {
+	text-decoration: none;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+	letter-spacing: 0.015em;
+	color: #000;
+}
 #pauseTestWrapper {
 	/*margin-left: 4.5%;*/
 	/*vertical-align: middle;*/
