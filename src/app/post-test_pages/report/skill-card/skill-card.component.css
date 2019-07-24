@@ -5,6 +5,9 @@
 	border-radius: 6px;
 	margin-bottom: 130px;
 	height: 560px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 
 
@@ -14,13 +17,17 @@ h3 {
 	line-height: 170%;
 	text-align: center;
 	letter-spacing: 0.05em;
-	margin-bottom: 50px;
 	padding-top: 40px;
+	height: 180px;
+	box-sizing: border-box;
 }
 
 @media only screen and (max-width: 1240px) {
 	#skillCardWrapper {
-		height: 600px;	
+		height: 650px;	
+	}
+	h3 {
+		padding-top: 15px;
 	}
 } 
 p {
@@ -45,6 +52,7 @@ h3, p {
 	align-items: center;
 	justify-content: center;
 	width: 100%;
+	margin-top: 10px;
 }
 
 #spinnerBackground {
