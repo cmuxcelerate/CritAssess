@@ -32,12 +32,62 @@ export const kcList = [
 
 	new KnowledgeComponent
 	(
+			"1.6", //ID
+			"Categorizing relevant information", //Description
+			// Praise
+			"You did a good job in understanding and appropriately formulating distinctions for describing and characterizing information.",
+			// Advice
+			"You could improve by digging more thoroughly into the reasons that form the distinctions between different pieces of information."
+	),
+
+	new KnowledgeComponent
+	(
+			"1.7", //ID
+			"Clarifying by asking relevant and penetrating questions to clarify facts, concepts, and relationships", //Description
+			// Praise
+			"You did a good job in identifying and probing into the most relevant concerns by asking relevant and penetrating questions.",
+			// Advice
+			"You could improve by not making assumptions based on personal experience or bias and analyzing different aspects of a given scenario."
+	),
+
+	new KnowledgeComponent
+	(
+			"2.1", //ID
+			"Determining whether a given statement is fact, opinion or doubtful assumption", //Description
+			// Praise
+			"You did a good job in judging whether statement provided is a theory, belief, fact, or assumption based on the given information",
+			// Advice
+			"You could improve by being more cautious in identifying pre-assumptions, opinionated descriptions and truthhold facts."
+	),
+
+	new KnowledgeComponent
+	(
+			"2.2", //ID
+			"Examining information and determining whether or not it expresses a reason(s) in support or in opposition to some conclusion, opinion, or point of view", //Description
+			// Praise
+			"You did a good job in determining whether certain information is in support or opposition of a particular question, issue, theory, hypothesis, or statement.",
+			// Advice
+			"You could improve by paying more attention to the logical relationship between an argument and its supporting evidence."
+	),
+
+	new KnowledgeComponent
+	(
 			"2.3", //ID
 			"Assessing applicability of information and separating relevant and irrelevant information", //Description
 			// Praise
 			"You did a good job in  understanding information, making appropriate inferences, abstracting important factors under different scenarios and synthesizing ideas",
 			// Advice
 			"You could improve by paying more attention to the relationship between the given information and the scenario."
+	),
+
+	new KnowledgeComponent
+	(
+			"3.1", //ID
+			"Weighing pros and cons of given solutions", //Description
+			// Praise
+			"You did a good job in identifying and justifying the strengths and weaknesses of given solutions.",
+			// Advice
+			"You could improve by looking more into the strengths and tradeoffs in different solutions"
 	),
 
 	new KnowledgeComponent

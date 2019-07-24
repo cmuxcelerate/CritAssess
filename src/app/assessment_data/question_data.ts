@@ -15,11 +15,13 @@ export const questions: Question[][] = [
 				new Answer("B, E, F", false)
 			],
 			// Feedback
-			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+			"Both finishing time and priority are important factors in deciding which functions to include and in what sequence. It is not a wise idea to use the lowest or highest time bounds as time estimates. Functions with the highest priority should be scheduled first to ensure completion on time.",
 			// KC's
 			[
-				"1.2",
-				"1.3",
+				"2.3",
+				"2.4",
+				"3.1",
+				"3.2"
 			],
 			1, // weight (defaults to 1 if skipped)
 
@@ -36,11 +38,12 @@ export const questions: Question[][] = [
 				new Answer("Develop the least time-consuming functions first to make sure that we complete as many functions as possible.", false)
 			],
 			// Feedback
-			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+			"Both finishing time and priority are important factors in deciding which functions to include and in what sequence. It is not a wise idea to use the lowest or highest time bounds as time estimates. Functions with the highest priority should be scheduled first to ensure completion on time.",
 			// KC's
 			[
-				"1.3",
-				"1.2",
+				"1.6",
+				"2.2",
+				"2.3"
 			],
 
 		), // End S1Q2
@@ -65,6 +68,7 @@ export const questions: Question[][] = [
 			[
 				"1.2",
 				"2.3",
+				"2.4",
 				"3.1"
 			]
 		), //End S2Q1
@@ -84,7 +88,11 @@ export const questions: Question[][] = [
 			"Because Jackie chose solution 1, we know that solution 1 should have a higher score than solution 2 in the requirements she cares about most. While we don’t know for certain whether Jackie values Requirement A or Requirement B more, we know that she must prioritize these two more than Requirements B or C because Solution 1 has the higher score in both Requirement A and Requirement B.",
 			// KC's
 			[
-				"1.3"
+				"1.2",
+				"2.2",
+				"2.3",
+				"2.4",
+				"3.1"
 			]
 		) //End S2Q2
 	], //End Scenario 2
@@ -108,10 +116,17 @@ export const questions: Question[][] = [
 				new Answer("Receive a Detailed Achievement Report", true)
 			],
 			// Feedback
-			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+			"It is better to include “Upload self-reflection” than “Add collaborators” since it has been proven by research (stronger evidence) that adding “Upload self-reflection” would improve student performance.",
 			// KC's
 			[
-				"1.3"
+				"1.2",
+				"1.3",
+				"1.4",
+				"1.6",
+				"2.1",
+				"2.3",
+				"3.1",
+				"3.2"
 			]
 		), //End S3Q1
 		// S3Q2
@@ -130,10 +145,14 @@ export const questions: Question[][] = [
 				new Answer("We should include “Make Audio Comments” since it would save the teachers some time for grading.", false)
 			],
 			// Feedback
-			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+			"It is better to include “Upload self-reflection” than “Add collaborators” since it has been proven by research (stronger evidence) that adding “Upload self-reflection” would improve student performance.",
 			// KC's
 			[
-				"1.2"
+				"1.3",
+				"1.4",
+				"2.2",
+				"2.3",
+				"2.4"
 			]
 		) //End 32Q2
 	], //End Scenario 3
@@ -153,11 +172,15 @@ export const questions: Question[][] = [
 				new Answer("Which demographics use the messaging feature most?", false),
 				new Answer("Has the change in usage differed across demographics?", true),
 			],
-			// Feedback
-			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+				// Feedback
+			"The correct answers are (B), (C) and (F). (A) is a little bit out of scope for a technical person. (B), (C), (F) help understand the situation better as they probe into more details from the perspectives of usage measurement, user demographics that have the potential of revealing the reasons of dropping usage. The answers to (D),(E) don’t lend insights into why the use of this feature is dropping.",
+
 			// KC's
 			[
-				"placeholder"
+				"1.2",
+				"1.7",
+				"2.3",
+				"2.4"
 			]
 		), //End S4Q1
 	], //End Scenario 4
@@ -175,10 +198,13 @@ export const questions: Question[][] = [
 				new Answer("Leave it there and focus on feature building. The bug has been there since the first release and has been triggered only once, so it’s not on the very urgent. Therefore, we can set it aside and focus on new feature building first.", false),
 			],
 			// Feedback
-			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+			"Currently it is wiser to choose the 98% good solution because it both addresses fixing the bug as well as saving 1.5 weeks to complete building the new feature. Although there would still be a risk, the risk would be smaller and it could always be fixed to 100% good later.",
 			// KC's
 			[
-				"1.4"
+				"2.2",
+				"2.4",
+				"3.1",
+				"3.2"
 			]
 		), //End S5Q1
 	], // End Scenario 5
@@ -197,10 +223,13 @@ export const questions: Question[][] = [
 				new Answer("Push back on your manager's request, with the risk of leaving the task unfinished, because what’s shown to the client should represent the highest standard of quality of your company.", false)
 			],
 			// Feedback
-			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+			"With pressing time, it is wiser to come up with a prototype solution. Other choices besides choice (A) have either the possibility of missing the deadline or finish with unsatisfactory quality.",
 			// KC's
 			[
-				"1.4"
+				"2.2",
+				"2.4",
+				"3.1",
+				"3.2"
 			]
 		), // End S6Q1
 
@@ -216,10 +245,13 @@ export const questions: Question[][] = [
 				new Answer("Periodically update your client with your latest progress to exchange views. Because the demand may change over time, short sprints can help with acceptance and making immediate changes.", true)
 			],
 			// Feedback
-			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+			"It’s a widely-adopted practice to periodically check in with client to update progress and exchange views to make sure you are on the same page.",
 			// KC's
 			[
-				"1.3"
+				"2.2",
+				"2.4",
+				"3.1",
+				"3.2"
 			]
 		), // End S6Q2
 	], // End Scenario 6
@@ -238,12 +270,15 @@ export const questions: Question[][] = [
 				new Answer("I would encourage the technical team to pursue the technical advancement and ask the sales team to try to come up with a different interpretation of the results generated by the advanced algorithm.", false)
 			],
 			// Feedback
-			"lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+			"Since there is a conflict within the three teams about whether to implement the algorithm, it would be best if all the three teams were to meet and discuss about the potential complications and then decide on a solution which fits all rather than just fitting some of the teams.",
 			// KC's
 			[
-				"1.2",
 				"1.3",
-				"1.4"
+				"1.4",
+				"2.2",
+				"2.4",
+				"3.1",
+				"3.2"
 			]
 		), // End S7Q1
 	], // End Scenario 7
