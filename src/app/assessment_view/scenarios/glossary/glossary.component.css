@@ -23,6 +23,7 @@ span:hover::before {
 	0px -4px 6px rgba(0, 0, 0, 0.25);
 	border-radius: 6px;
 	left: 0px;
+	top: 20px;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 15px;
@@ -34,8 +35,8 @@ span:hover::before {
 /*Little triangle makes definition look like speech bubble*/
 span:hover::after {
 	content: "";
-	top: 15px;
 	left: 5px;
+	top: 15px;
 	position: absolute;
 	width: 0; 
 	height: 0; 
