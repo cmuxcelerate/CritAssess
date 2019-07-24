@@ -1,4 +1,12 @@
 <svg viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-	<circle id="bar" [attr.r]="radius" cx="100" cy="100" fill="transparent"  stroke-dasharray="565.48" stroke-dashoffset="0" [ngStyle]="{'stroke-dashoffset': arc, 'stroke': isTopSkill ? 'FF890D' : '#3023AE'}"></circle>
+    <linearGradient id="topGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#F7B53C"/>
+      <stop offset="100%" stop-color="#F8679F"/>
+    </linearGradient>
+    <linearGradient id="bottomGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#AFE859"/>
+      <stop offset="100%"   stop-color="#3023AE"/>
+    </linearGradient>
+	<circle id="bar" [attr.r]="radius" cx="100" cy="100" fill="transparent"  stroke-dasharray="565.48" stroke-dashoffset="0" [ngStyle]="{'stroke-dashoffset': arc, 'stroke': isTopSkill ? 'url(#topGradient)' : 'url(#bottomGradient)'}"></circle>
 	<circle id="background" [attr.r]="radius" cx="100" cy="100" fill="transparent"  stroke-dasharray="565.48" stroke-dashoffset="0" [ngStyle]="{'stroke-dashoffset': circumference + arc, 'stroke': isTopSkill ? '#FF9F1E' : '#9ED2F0'}"></circle>
 </svg>
