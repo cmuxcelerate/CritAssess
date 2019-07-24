@@ -22,3 +22,8 @@ p {
 	letter-spacing: 0.05em;
 	margin-bottom: 20px;
 }
+@media only screen and (max-width: 800px) {
+	#scenarioWrapper {
+		max-height: none;
+	}
+}
