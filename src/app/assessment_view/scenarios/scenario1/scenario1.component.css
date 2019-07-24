@@ -70,3 +70,9 @@ td {
 .col2, .col3 {
 	text-align: right;
 }
+
+@media only screen and (max-width: 800px) {
+	#scenarioWrapper {
+		max-height: none;
+	}
+}

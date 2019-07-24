@@ -32,7 +32,18 @@ app-congratulations {
 }
 
 @media only screen and (max-width: 800px) {
+	.scenario, app-mcq, app-select-all {
+		width: 100%;
+		height: auto;
+		box-sizing: border-box;
+		max-height: none;
+	}
+	#assessmentPageWrapper {
+		display: flex;
+		flex-direction: column;
+	}
 	app-mcq, app-select-all {
-		width: 34%;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 }
