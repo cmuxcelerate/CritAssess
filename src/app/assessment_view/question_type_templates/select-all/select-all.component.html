@@ -1,6 +1,6 @@
 <h3>Question {{assessment.question + 1}} of {{assessment.questionGroups[assessment.scenario].length}}</h3>
 <p id="prompt">{{question.prompt}}</p>
-<span>Click on an circle to elect one answer choice. To choose a different anser, click one different circle.</span>
+<span>Click on a checkbox to select an answer choice. You can select MULTIPLE answers to this question.</span>
 
 
 <div *ngFor="let answer of question.answers; index as i" class="answerChoice">
