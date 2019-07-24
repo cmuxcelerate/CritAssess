@@ -45,6 +45,7 @@ th {
 th, td {
 	border-bottom: 1px solid #E5E5E5;
 	text-align: left;
+	position: relative;
 }
 
 td {
