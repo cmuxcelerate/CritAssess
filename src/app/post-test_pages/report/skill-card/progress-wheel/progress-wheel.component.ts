@@ -16,7 +16,11 @@ export class ProgressWheelComponent implements OnInit {
 
 	ngOnInit() {
 		this.circumference = Math.PI*2*this.radius;
-		this.arc = (100-this.percent)/100*this.circumference;
+		this.arc = this.circumference;
+		let self = this;
+		setTimeout(_ => {
+			self.arc = (100-this.percent)/100*this.circumference;
+		}, 600);
 	}
 
 }
