@@ -10,6 +10,7 @@ export class Assessment {
 	done: boolean = false; //Whether test is complete
 	reviewing: boolean = false; //Whether user is reviewing feedback
 	flatIndex: number = 0; //Index of current question when all are flattened into one list
+	totalScore: number = 0;
 	constructor(questionGroups: Question[][]) {
 		this.questionGroups = questionGroups;
 		this.scenario = 0;
@@ -113,6 +114,9 @@ export class Assessment {
 				}); //End question.kcs.forEach()
 			}); //End questionGroup.forEach()
 		}); //End questionGroups.forEach()
+
+		// Assign total score
+		this.totalScore = res['totalScore'].score/res['totalScore'].count;
 
 		// assign score to each kc in kcList
 		console.log("writing scores into each kc");

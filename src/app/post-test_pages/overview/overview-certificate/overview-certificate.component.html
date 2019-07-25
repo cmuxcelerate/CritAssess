@@ -1,7 +1,7 @@
 <div id="reportsWrapper">
 	<h3 id="title">Certificates</h3>
 
-	<div class="row">
+	<div class="row" *ngIf="assessment.totalScore >= .7">
 		<img src="./assets/profiles.png">
 		<div id="dateAndLabel">
 			<p>Date: 08/01/2019</p>
