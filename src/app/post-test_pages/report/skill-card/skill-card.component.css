@@ -66,18 +66,32 @@ h3, p {
 	/*border: 2px solid #F7B35C;*/
 }
 
-#spinnerBackground span {
+#spinnerBackground > span {
 	position: absolute;
 	font-weight: 500;
 	font-size: 30px;
 	line-height: 35px;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	text-align: center;
 	letter-spacing: 0.015em;
 	/*color: #FF5819;*/
 }
-
+	#score {
+		display: block;
+	}
+	#correct {
+		display: block;
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 18px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		letter-spacing: 0.015em;
+		/*color: #FF5819;	*/
+	}
 #spinnerFill {
 	display: block;
 	position: absolute;

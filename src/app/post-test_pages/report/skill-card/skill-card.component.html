@@ -5,7 +5,10 @@
 		<div id="spinnerBackground">
 			<app-progress-wheel radius="90" [percent]="kc.score*100" [isTopSkill]="isTopSkill"></app-progress-wheel>
 			<span [ngStyle]="{'color': isTopSkill ? '#FF5819': '#3229B1'}">
-				{{kc.score*100 | number: '1.0-0'}}%
+				<div id="score">
+					{{kc.score*100 | number: '1.0-0'}}%
+				</div>
+				<div id="correct">Correct</div>
 			</span>
 		</div>
 	</div> <!-- End spinnerWrapper -->
