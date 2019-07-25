@@ -63,7 +63,7 @@ export const kcList = [
 	new KnowledgeComponent
 	(
 			"2.2", //ID
-			"Examining information and determining whether or not it expresses a reason(s) in support or in opposition to some conclusion, opinion, or point of view", //Description
+			"Determining whether information supports a position", //Description
 			// Praise
 			"You did a good job in determining whether certain information is in support or opposition of a particular question, issue, theory, hypothesis, or statement.",
 			// Advice
