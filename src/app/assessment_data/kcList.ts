@@ -37,7 +37,7 @@ export const kcList = [
 			// Praise
 			"You did a good job in understanding and appropriately formulating distinctions for describing and characterizing information.",
 			// Advice
-			"You could improve by digging more thoroughly into the reasons that form the distinctions between different pieces of information."
+			"You could improve by thinking more thoroughly about the distinguishing factors in the given information in order to categorize them in a relevant manner."
 	),
 
 	new KnowledgeComponent
@@ -63,7 +63,7 @@ export const kcList = [
 	new KnowledgeComponent
 	(
 			"2.2", //ID
-			"Determining whether information supports a position", //Description
+			"Determining whether information gives reason to support a position", //Description
 			// Praise
 			"You did a good job in determining whether certain information is in support or opposition of a particular question, issue, theory, hypothesis, or statement.",
 			// Advice
