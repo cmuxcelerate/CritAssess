@@ -11,6 +11,18 @@
 	scroll-width: 10px; 
 }
 
+html, body, app-root {
+	display: block;
+	min-height: 100vh;
+	height: auto;
+	margin: 0;
+	overflow: auto;
+}
+app-footer {
+/*	position: fixed;
+	bottom: 0;
+	width: 100%;
+*/}
 body {
 	margin: 0px !important;
 /*	position: relative;
