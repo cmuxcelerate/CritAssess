@@ -137,12 +137,9 @@ export const questions: Question[][] = [
 			[
 				new Answer("Since we are building a minimum viable product, we need to include the most common features that products of this kind should have.", true),
 				new Answer("We should include every feature that is not in our competitors’ products to differentiate our product.", false),
-				new Answer("We should prioritize users’ opinion over buyers’ opinions, because we want to maximize our product’s usability for our end users.", false),
 				new Answer("We should include “Upload Self-Reflection” because it has been proven by research that this would help improve learners’ performance”", true),
 				new Answer("We should include “Upload Daily Progress” because daily progress would be useful for the teachers", false),
 				new Answer("We should include “Add Weekly Progress” because while talking to students and teachers, it was found that this feature would be helpful for both these stakeholders.", true),
-				new Answer("We should include “Add collaborators” since none of our competitors have this feature.", false),
-				new Answer("We should include “Make Audio Comments” since it would save the teachers some time for grading.", false)
 			],
 			// Feedback
 			"It is better to include “Upload self-reflection” than “Add collaborators” since it has been proven by research (stronger evidence) that adding “Upload self-reflection” would improve student performance.",
