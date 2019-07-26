@@ -20,6 +20,7 @@ app-mcq, app-select-all {
 	vertical-align: top;
 	padding-left: 51px;
 	width: 45.4%;
+	border-left: 1px solid rgba(206, 206, 206, 0.5);
 }
 
 app-congratulations {

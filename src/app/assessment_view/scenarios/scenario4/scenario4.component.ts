@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./scenario4.component.css']
 })
 export class Scenario4Component implements OnInit {
+	minimumHeight: string; //Min height of scenario to fill page
+	constructor() { }
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+	ngOnInit() {
+		// min height is window - header - assessmentHeader - footer
+		const height = window.innerHeight - 82 - 52 - 78;
+		this.minimumHeight =  height + "px";
+	}
 
 }
