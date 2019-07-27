@@ -1,3 +1,12 @@
-<p>
-  choose-section works!
-</p>
+<div id="sectionWrapper" [style.minHeight]="minimumHeight">
+	<h1>Select one section</h1>
+	<p>Please click one section then click 'Start' to begin the assessment.</p>
+	<div id="sections">
+		<app-test-history-section section="a" scenarios="8" duration="20 mins" class="imgWrap"></app-test-history-section>
+		<app-test-history-section section="b" scenarios="9" duration="24 mins" class="imgWrap"></app-test-history-section>
+		<app-test-history-section section="c" scenarios="7" duration="22 mins" class="imgWrap"></app-test-history-section>
+	</div>
+	<a routerLink="/directions">
+		<button>Start</button>
+	</a>
+</div>
