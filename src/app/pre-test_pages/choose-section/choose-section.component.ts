@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChooseSectionComponent implements OnInit {
 	minimumHeight: string; //Minimum height of this page (prevents whitespace at page bottom)
+	selectedSection: boolean;
+	
+	rejectSelection() {
+		alert("In this demo, only section 3 may be selected");
+	}
 	constructor() { }
 
 	ngOnInit() {
