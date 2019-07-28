@@ -1,0 +1,62 @@
+#sections {
+	width: 80%;
+	margin-left: 10%;
+	display: grid;
+	position: relative;
+	grid-template-columns: [v0] 1fr [v1] 1fr [v2] 1fr [v3];
+	grid-template-rows: [h0] auto [h2] auto [h3];
+	align-items: stretch;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	grid-column-gap: 20px; 
+	grid-row-gap: 10px;
+}
+h1 {
+	padding-top: 60px;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 29px;
+	text-align: center;
+	letter-spacing: 0.04em;
+	color: #000000;
+}
+
+p {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0.05em;
+	color: #000000;
+}
+
+app-section-choice {
+	display: inline-block;
+	width: 100%;
+	/*margin-left: 40px;*/
+}
+
+#start {
+	grid-column: v1 / v2;
+	grid-row: h1/h3;
+	/*position: absolute;*/
+	display: block;
+	/*border: 2px solid black;*/
+	/*width: 100%;*/
+	transition: all .5s ease;
+}
+button {
+	width: 100%;
+
+}
+#sectionb app-section-choice {
+	width: 100%;
+	margin-left: 0;
+}
+
+@media only screen and (max-width: 1140px) {
+	#sections {
+		display: flex;
+		flex-direction: column;
+	}
+
+}

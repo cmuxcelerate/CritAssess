@@ -1,0 +1,14 @@
+<div id="sectionWrapper">
+	<h1>Select one section</h1>
+	<!-- <p>Please click one section then click 'Start' to begin the assessment.</p> -->
+	<div id="sections">
+		<app-section-choice id="sectiona" section="a" scenarios="8" duration="20 mins" class="imgWrap" (click)="rejectSelection()"></app-section-choice>
+		<app-section-choice id="sectionb" section="b" scenarios="9" duration="24 mins" class="imgWrap" (click)="rejectSelection()"></app-section-choice>
+		<app-section-choice [selected]="selectedSection" id="sectionc" section="c" scenarios="7" duration="22 mins" class="imgWrap" (click)="selectedSection = !selectedSection"></app-section-choice>
+		<div id="start" [style.width]="!selectedSection ? '0' : '100%'" >
+			<a routerLink="/directions">
+				<button>Start</button>
+			</a>
+		</div>
+	</div>
+</div>
