@@ -1,11 +1,13 @@
 <div id="sectionWrapper">
 	<div class="imgWrap">
 		<img [src]="selected? './assets/selected-section.png' : './assets/choose-section'+section+'.png' ">
-		<div class="sectionText">
-			<h1>Section {{section | uppercase}}</h1>
-			<div id="sectionLength">
-				<span>{{scenarios}} Scenarios</span>
-				<span>{{duration}}</span>
+		<div class="outerTextWrap">
+			<div class="sectionText">
+				<h1>Section {{section | uppercase}}</h1>
+				<div id="sectionLength">
+					<span>{{scenarios}} Scenarios</span>
+					<span>{{duration}}</span>
+				</div>
 			</div>
 		</div>
 	</div> <!-- End imgWrap -->

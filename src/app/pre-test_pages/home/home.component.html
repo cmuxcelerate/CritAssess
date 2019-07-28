@@ -3,7 +3,7 @@
 		<p class="boldtext">Test your 
 		critical thinking abilities</p>
 		<p class="introtext">Accelerate your career by being an expert critical thinker</p>
-		<a routerLink="/section">
+		<a (click)="showModal = true">
 			<button>TAKE TEST</button>
 		</a>
 	</div>
@@ -12,4 +12,5 @@
 		<img src="./assets/landing3.png">
 	</div>
 
+	<app-choose-section *ngIf="showModal"></app-choose-section>
 </div>
