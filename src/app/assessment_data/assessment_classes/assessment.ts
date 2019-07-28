@@ -9,11 +9,11 @@ export class Assessment {
 	questionsAnswered: number; //How many questions have been answered so far
 	done: boolean = false; //Whether test is complete
 	reviewing: boolean = false; //Whether user is reviewing feedback
-	flatIndex: number = 0; //Index of current question when all are flattened into one list
+	flatIndex: number = 10; //Index of current question when all are flattened into one list
 	totalScore: number = 0;
 	constructor(questionGroups: Question[][]) {
 		this.questionGroups = questionGroups;
-		this.scenario = 0;
+		this.scenario = 5;
 		this.question = 0;
 		this.confirmedAnswer = false;
 		this.questionsAnswered = 0;

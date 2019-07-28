@@ -154,33 +154,7 @@ export const questions: Question[][] = [
 		) //End 32Q2
 	], //End Scenario 3
 
-	// Scenario 4
-	[
-		// S4Q1
-		new Question(
-			"select-all",
-			"Out of the given questions, which of these would be useful? (Select All that Apply)",
-			// answers
-			[
-				new Answer("How did the company determine whether it should have a messaging feature?", false),
-				new Answer("How are you measuring usage of the messaging feature?", true),
-				new Answer("Over what time period has the usage of the messaging feature dropped?", true),
-				new Answer("How does the messaging feature work?", false),
-				new Answer("Which demographics use the messaging feature most?", false),
-				new Answer("Has the change in usage differed across demographics?", true),
-			],
-				// Feedback
-			"The correct answers are (B), (C) and (F). (A) is a little bit out of scope for a technical person. (B), (C), (F) help understand the situation better as they probe into more details from the perspectives of usage measurement, user demographics that have the potential of revealing the reasons of dropping usage. The answers to (D),(E) don’t lend insights into why the use of this feature is dropping.",
 
-			// KC's
-			[
-				"1.2",
-				"1.7",
-				"2.3",
-				"2.4"
-			]
-		), //End S4Q1
-	], //End Scenario 4
 
 	// Scenario 5
 	[
@@ -253,6 +227,33 @@ export const questions: Question[][] = [
 		), // End S6Q2
 	], // End Scenario 6
 
+	// Scenario 4
+	[
+		// S4Q1
+		new Question(
+			"select-all",
+			"Out of the given questions, which of these would be useful? (Select All that Apply)",
+			// answers
+			[
+				new Answer("How did the company determine whether it should have a messaging feature?", false),
+				new Answer("How are you measuring usage of the messaging feature?", true),
+				new Answer("Over what time period has the usage of the messaging feature dropped?", true),
+				new Answer("How does the messaging feature work?", false),
+				new Answer("Which demographics use the messaging feature most?", false),
+				new Answer("Has the change in usage differed across demographics?", true),
+			],
+				// Feedback
+			"The correct answers are (B), (C) and (F). (A) is a little bit out of scope for a technical person. (B), (C), (F) help understand the situation better as they probe into more details from the perspectives of usage measurement, user demographics that have the potential of revealing the reasons of dropping usage. The answers to (D),(E) don’t lend insights into why the use of this feature is dropping.",
+
+			// KC's
+			[
+				"1.2",
+				"1.7",
+				"2.3",
+				"2.4"
+			]
+		), //End S4Q1
+	], //End Scenario 4
 	// Scenario 7
 	[
 	// S7Q1
