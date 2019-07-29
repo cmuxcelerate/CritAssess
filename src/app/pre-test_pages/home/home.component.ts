@@ -8,6 +8,8 @@ import { Assessment } from '../../assessment_data/assessment_classes/assessment'
 })
 export class HomeComponent implements OnInit {
 
+	showModal: boolean = false; //Toggles 'choose section' modal
+
 	// assessmentService: AssessmentService;
 	get assessment(): Assessment {
 		return this.assessmentService.assessment;

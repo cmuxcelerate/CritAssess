@@ -139,7 +139,7 @@ export const questions: Question[][] = [
 				new Answer("We should include every feature that is not in our competitors’ products to differentiate our product.", false),
 				new Answer("We should include “Upload Self-Reflection” because it has been proven by research that this would help improve learners’ performance”", true),
 				new Answer("We should include “Upload Daily Progress” because daily progress would be useful for the teachers", false),
-				new Answer("We should include “Add Weekly Progress” because while talking to students and teachers, it was found that this feature would be helpful for both these stakeholders.", true),
+				new Answer("We should include Set Weekly Goals because while talking to students and teachers, it was found that this feature would be helpful for both these stakeholders.", true),
 			],
 			// Feedback
 			"It is better to include “Upload self-reflection” than “Add collaborators” since it has been proven by research (stronger evidence) that adding “Upload self-reflection” would improve student performance.",

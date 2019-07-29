@@ -3,6 +3,7 @@
 }
 #sectionWrapper, #imgWrap {
 	width: 100%;
+	position: relative;
 }
 
 span {
@@ -29,11 +30,19 @@ img {
 	border-radius: 10px;
 	width: 100%;
 }
+.outerTextWrap {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
 .sectionText {
 	display: flex;
 	position: absolute;
 	flex-direction: column;
-	bottom: 20%;
+	bottom: 20px;
 	justify-content: flex-start;
 	margin-left: 20px;
 	margin-bottom: 20px;
@@ -43,4 +52,10 @@ img {
 	display: flex;
 	justify-content: flex-start;
 	margin-top: 10px;
+}
+
+@media only screen and (max-width: 1300px) {
+	#sectionLength {
+		flex-direction: column;
+	}
 }
