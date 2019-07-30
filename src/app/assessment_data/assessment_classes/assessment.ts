@@ -13,7 +13,7 @@ export class Assessment {
 	totalScore: number = 0;
 	constructor(questionGroups: Question[][]) {
 		this.questionGroups = questionGroups;
-		this.scenario = 5;
+		this.scenario = 4;
 		this.question = 0;
 		this.confirmedAnswer = false;
 		this.questionsAnswered = 0;
