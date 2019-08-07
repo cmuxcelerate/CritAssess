@@ -190,7 +190,7 @@ export const questions: Question[][] = [
 			[
 				new Answer("Discuss with your colleagues, trying to figure out a way to improve the efficiency in 2 days. If necessary, transfer the projects to other people.", false),
 				new Answer("Using an agile development process, update your client periodically in these 2 days before the demo show to ensure their acceptance of our changing demo idea.", false),
-				new Answer("Discuss a temporary solution with your manager: to make a prototype automation function on the demo show to let the client get the gist of how everything would work without actually building the function.", true),
+				new Answer("Discuss a temporary solution with your manager: make a prototype without real automation to let the client get the gist of how everything would work without actually building the function.", true),
 				new Answer("Push back on your manager's request, with the risk of leaving the task unfinished, because what’s shown to the client should represent the highest standard of quality of your company.", false)
 			],
 			// Feedback
@@ -243,7 +243,7 @@ export const questions: Question[][] = [
 				new Answer("Has the change in usage differed across demographics?", true),
 			],
 				// Feedback
-			"The correct answers are (B), (C) and (F). (A) is a little bit out of scope for a technical person. (B), (C), (F) help understand the situation better as they probe into more details from the perspectives of usage measurement, user demographics that have the potential of revealing the reasons of dropping usage. The answers to (D),(E) don’t lend insights into why the use of this feature is dropping.",
+			"The correct answers are (B), (C) and (F). (A) is a little bit out of scope for a technical person. (B), (C), (F) help understand the situation better as they probe into more details from the perspectives of usage measurement, user demographics that have the potential of revealing the reasons of dropping usage. (D) is too technically detailed without having reason to believe that the problem is technical. (E) is incorrect because knowing which demographics use the messaging feature most doesn't address the change in usage.",
 
 			// KC's
 			[
