@@ -1,0 +1,35 @@
+#entryWrapper {
+	display: flex;
+	position: relative;
+	align-items: center;
+	width: 100%;
+}
+#entryText {
+	width: 75%;
+	margin-left: 10%;
+}
+
+#nameAndRole {
+	display: block;
+	position: relative;
+}
+
+	h3 {
+		display: inline-block;
+		margin-bottom: 15px;
+	}
+	#name, #nameAndRole span {
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 150%;
+		letter-spacing: 0.05em;
+		color: #000000;
+	}
+
+	#role {
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 150%;
+		letter-spacing: 0.05em;
+		color: #868686;
+	}

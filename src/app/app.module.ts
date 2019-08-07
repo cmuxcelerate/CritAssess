@@ -41,6 +41,7 @@ import { SectionChoiceComponent } from './pre-test_pages/home/choose-section/sec
 import { ResearchComponent } from './pre-test_pages/research/research.component';
 import { DevelopmentComponent } from './pre-test_pages/development/development.component';
 import { AboutComponent } from './pre-test_pages/about/about.component';
+import { AboutEntryComponent } from './pre-test_pages/about/about-entry/about-entry.component';
 
 
 @NgModule({
@@ -82,6 +83,7 @@ import { AboutComponent } from './pre-test_pages/about/about.component';
     ResearchComponent,
     DevelopmentComponent,
     AboutComponent,
+    AboutEntryComponent,
   ],
   imports: [
     BrowserModule,
