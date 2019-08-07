@@ -50,7 +50,7 @@ h2 {
 		flex-direction: column;
 		align-items: center;
 	}
-	
+
 p, li {
 	font-weight: 300;
 	font-size: 15px;
@@ -69,6 +69,15 @@ p, li {
 	margin-left: 10%;
 }
 #researchScope ol li {
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 150%;
+	letter-spacing: 0.05em;
+	color: #000000;
+}
+
+
+strong {
 	font-weight: bold;
 	font-size: 15px;
 	line-height: 150%;
