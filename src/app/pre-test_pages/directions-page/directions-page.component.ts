@@ -11,7 +11,7 @@ export class DirectionsPageComponent implements OnInit {
 
 	ngOnInit() {
 		// min height is window - header - assessmentHeader - footer
-		const height = window.innerHeight - 82 - 52 - 78
+		const height = window.innerHeight - 82 - 52 - 78;
 		this.minimumHeight =  height + "px";
 	}
 
