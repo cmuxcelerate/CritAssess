@@ -1,0 +1,77 @@
+#researchWrapper {
+	display: flex;
+	position: relative;
+	width: 70%;
+	margin-left: 15%;
+	flex-direction: column;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+/*Section headers*/
+.section {
+	margin-top: 35px;
+}
+	h1 {
+		font-weight: bold;
+		font-size: 35px;
+		line-height: 86px;
+		text-align: center;
+		letter-spacing: 0.05em;
+		color: #000000;
+	}
+	app-research-header {
+		position: relative;
+		display: block;
+		margin-bottom: -15px;
+	}
+
+h2 {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 150%;
+	letter-spacing: 0.05em;
+	color: #000000;
+}
+
+.imgWrap {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 40px;
+}
+
+	.imgWrap div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+p, li {
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 150%;
+	letter-spacing: 0.05em;
+	color: #000000;
+	margin-top: 10px;
+}
+
+#whyCT ol ol {
+	width: 90%;
+	margin-left: 10%;
+}
+
+#researchScope ol {
+	margin-left: 10%;
+}
+#researchScope ol li {
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 150%;
+	letter-spacing: 0.05em;
+	color: #000000;
+}

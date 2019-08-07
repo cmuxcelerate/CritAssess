@@ -1,0 +1,17 @@
+#square {
+	display: inline-block;
+	position: relative;
+	width: 13px;
+	height: 13px;
+	background-color: #6840CC;
+}
+h3 {
+	display: inline-block;
+	position: relative;
+	margin-left: 13px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 150%;
+	letter-spacing: 0.05em;
+	color: #000000;
+}
