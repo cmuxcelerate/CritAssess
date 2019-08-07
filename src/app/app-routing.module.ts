@@ -7,11 +7,16 @@ import { ReportComponent } from './post-test_pages/report/report.component';
 import { PostTestPagesComponent } from './post-test_pages/post-test-pages.component';
 import { OverviewComponent } from './post-test_pages/overview/overview.component';
 import { CertificateComponent } from './post-test_pages/certificate/certificate.component';
-// import {TestComponent } from './test/test.component';
+import { AboutComponent } from './pre-test_pages/about/about.component';
+import { ResearchComponent } from './pre-test_pages/research/research.component';
+import { DevelopmentComponent } from './pre-test_pages/development/development.component';
 
 const routes: Routes = [
 { path: '', redirectTo: 'home', pathMatch: 'full' },
 { path: 'home', component: HomeComponent },
+{ path: 'about', component: AboutComponent },
+{ path: 'research', component: ResearchComponent },
+{ path: 'development', component: DevelopmentComponent },
 { path: 'assessment', component: AssessmentPageComponent },
 { path: 'directions', component: DirectionsPageComponent },
 { path: 'review', component: PostTestPagesComponent, 

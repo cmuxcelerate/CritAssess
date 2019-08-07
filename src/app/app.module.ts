@@ -38,6 +38,9 @@ import { TestHistorySectionComponent } from './post-test_pages/overview/overview
 import { CertificateComponent } from './post-test_pages/certificate/certificate.component';
 import { ChooseSectionComponent } from './pre-test_pages/home/choose-section/choose-section.component';
 import { SectionChoiceComponent } from './pre-test_pages/home/choose-section/section-choice/section-choice.component';
+import { ResearchComponent } from './pre-test_pages/research/research.component';
+import { DevelopmentComponent } from './pre-test_pages/development/development.component';
+import { AboutComponent } from './pre-test_pages/about/about.component';
 
 
 @NgModule({
@@ -76,6 +79,9 @@ import { SectionChoiceComponent } from './pre-test_pages/home/choose-section/sec
     CertificateComponent,
     ChooseSectionComponent,
     SectionChoiceComponent,
+    ResearchComponent,
+    DevelopmentComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

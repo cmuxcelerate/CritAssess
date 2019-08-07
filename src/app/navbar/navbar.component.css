@@ -11,7 +11,7 @@
 	#logoWrapper {
 		margin-left: 4.5%;
 	}
-		span {
+		#logoWrapper span {
 			position: relative;
 			width: 397px;
 			height: 22px;
@@ -34,5 +34,33 @@
 		position: relative;
 		width: 21px;
 		height: 21px;
-		margin-right: 10.5%;
+		margin-left: 40px;
+	}
+
+#linksAndProf {
+	display: flex;
+	position: relative;
+	justify-content: flex-end;
+	margin-right: 4.8%;
+	align-items: center;
+}
+	a {
+		text-decoration: none !important;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 16px;
+		letter-spacing: 0.015em;
+		color: #FAFAFA;
+		padding-bottom: 6px;
+	}
+		.v-line {
+			height: 90%;
+			width: 1px;
+			margin-right: 40px;
+			margin-left: 40px;			
+			border-left: 1px solid #C4C4C4;
+		}
+
+	.active {
+		border-bottom: 3px solid #FFFFFF;
 	}
