@@ -1,3 +1,126 @@
-<p>
-  development works!
-</p>
+<div id="developmentWrapper">
+	<h1>Development</h1>
+	<!-- Overview -->
+	<div class="section">
+		<app-research-header txt="overview"></app-research-header>
+		<div class="subsection">
+			<h2>About CritAssess</h2>
+			<p>
+				CritAssess represents the culmination of six months of extensive research into how critical thinking is perceived and evaluated in academic and professional contexts. The synthesis of this research lays the foundation for a rigorously designed and tested assessment consisting of closed-form questions for maximum scalability. The high-fidelity working prototype of this assessment showcases one of three 20-minute modules that can be taken altogether for an hour-long certification; or individually, for segmented content toward skill development. CritAssess measures critical thinking skills across 11 knowledge components (Aleven & Koedinger 2013), which can be thought of as sub-skills, to target necessary competencies for top-performing computer science employees both during the hiring process and on-the job. These requirements include planning & prioritization, weighing options, and root cause analysis. Learners receive feedback on their three top-performing skills as well as the three with most room for improvement. If certified, learners can display their certification on LinkedIn; they also may choose to export their learner report and include it with a job application. Tech recruiters can seek this certification as part of job-seekers profiles.
+			</p>
+		</div> <!-- End About CritAssess subsection -->
+	</div> <!-- End Overview section -->
+
+	<!-- Process -->
+	<div class="section">
+		<app-research-header txt="process"></app-research-header>
+		<div class="subsection">
+			<div class="imgWrap">
+				<img src="./assets/fishbone.png">
+			</div>
+		</div>
+	</div> <!-- End Process section -->
+
+	<!-- Instructional Features -->
+	<div class="section">
+		<app-research-header txt="Instructional Features"></app-research-header>
+		<!-- Situational Judgement Tasks -->
+		<div class="subsection">
+			<h2>Situational Judgement Tasks</h2>
+			<p>
+				When learners log into the assessment page of CritAssess, they encounter a series of scenarios that are adapted from real work incidents. The situational judgement items present work- related situations to respondents and request that the respondent evaluates several possible responses to the situation. Situational Judgement tests are developed in two steps (Motowidlo et al. 1997). First, critical incidents (stories about situations encountered on the job) need to be collected from the subject matter experts. Next, the critical incidents collected are reviewed by task developers with the goal of identifying a set of situation descriptions that will serve as the stems for the situational judgment items. In our case, we interviewed industry experts such as recruiters from different technology companies to gather authentic work scenarios. We also asked recruiters to review already-developed-tasks and give feedback. 
+			</p>
+			<p>
+				Most of the existing critical thinking assessments are domain general (e.g. Cornell Critical Thinking Task, California Test of Critical Thinking Skills). Therefore, it’s hard to translate the scores that task-takers get in such critical thinking tasks into their work performance. Research (McDaneil et al., 2007) suggests that performance in SJTs is positively related to personality (conscientiousness, emotional stability, and agreeableness), cognitive abilities and specific job knowledge. In a real working context, merely remembering facts or procedures is not enough. By situating the assessment in a real-world context, we enable career application.
+			</p>
+		</div> <!-- End Situational Judgement Tasks -->
+
+		<!-- Two-Part questions -->
+		<div class="subsection">
+			<h2>Two-Part Selected Response Assessment</h2>
+			<p>
+				When learners log into the assessment page of CritAssess, they would find that most questions are formatted in a choose-then-explain paradigm, where test-takers must first make a decision based on given information, and then provide reason(s) justifying their answer. All of our tasks are in the form of either multiple choice or choose-all-that-apply in which the answer is fixed and automatically graded. Each question is assigned the same weight toward the final grading. Some question items are rewarded partial credit if there is a reasonable intention behind the selection; yet not the best choice. This practice mirrors a similar approach used currently in many critical thinking tests.
+			</p>
+			<p>
+				In order to evaluate learners’ ability to make well-reasoned decisions, one must analyze both the choices they make, and the reasons underlying those choices. The use of separate questions to evaluate both the conclusions learners arrive at, and the methods by which they get there, helps to isolate the skills being used and improve the test’s validity. Moreover, Microsoft’s learning platforms are used by learners from all parts of the world; therefore, grading at scale is a crucial feature Closed-form assessment requires the least human involvement as it can be done automatically.
+			</p>
+		</div> <!-- End Two-Part questions -->
+
+		<!-- Formative & Summative Assessment -->
+		<div class="subsection">
+			<h2>Formative & Summative Assessment</h2>
+			<p>
+				When learners finish all three sections of CritAssess, they are provided with formative feedback in the form of a learner report. If they pass a threshold score, they are also provided with a summative credential which can be shown to recruiters. The learner report contains a detailed explanation of learner’s performance with scenario-level corrective feedback. Learners’ top three performing knowledge components and bottom three performing knowledge components are displayed. The learner report is written in an affirmative and constructive way to give guidance and foster a growth mindset in learners. For recruiters, a certificate with an explanation of what the assessment focus is will be given to learners who pass the assessment. Upon seeing the certificate, recruiters can verify that this candidate has proficient critical thinking ability along with the evidence to support this claim.
+			</p>
+			<p>
+				The users of this product include both learners and recruiters. Therefore, we strive to balance formative and summative to satisfy the needs from both parties. With corrective feedback, students are able to make progress over time. With a certificate, recruiters are able to quickly tell which candidates have the kind of abilities that they seek for. They could also tell at a quick glance what this assessment is about by looking at the brief description we provided on the certificate.
+			</p>
+		</div> <!-- End Formative & Summative -->
+
+		<!-- Segmented Tasks -->
+		<div class="subsection">
+			<h2>Segmented Tasks</h2>
+			<p>
+				CritAssess segments the assessment is into three sections, with a time estimate that each section may take around 20 minutes to finish. When learners finish a section, their selections are recorded. The learner can choose to take the next section whenever they want. The time estimate was obtained from quantitative analysis which monitored finishing time in backend of Qualtrics. The number and variety of knowledge components that get assessed in each section is carefully balanced to make sure that the sections are almost homogeneous.
+			</p>
+			<p>
+				Per client’s request, we segmented the assessment into three 3 sections because we would want the task takers to be able to stop and resume at the place that they want. It is also a standard industry practice that the assessment be segmented (e.g. Graduate Record Examinations) A 20-minute finishing time is a good use of learners’ attention span. We want our assessment to focus on the knowledge components we want to assess rather than being interfered and compromised by external factors like large cognitive load.
+			</p>
+		</div> <!-- End Segmented Tasks -->
+
+		<!-- KC Modeling -->
+		<div class="subsection">
+			<h2>Knowledge Component (KC) Modeling</h2>
+			<p>
+				When students use CritAssess to assess their critical thinking skills, a spectrum of different skills (knowledge components) would be evaluated, which originates from the Knowledge-Learning-Instruction (KLI) framework. KLI framework relates a set of observable and unobservable events related to student learning. As illustrated in Fig. T4, Instructional Events and Assessment Events as events which are observable activities in or changes to the instructional environment controlled by an instructor,instructional designer, or experimenter. Learning Events produce Knowledge Components and the acquisition and modification of these components is the KLI framework’s explanation for consistency in student performance and transfer across related Assessment Events. A knowledge component is a description of a mental structure or process that a learner uses, alone or in combination with other knowledge components, to accomplish steps in a task or a problem. Unobservable Knowledge Components (KCs) can be inferred by comparing performances exhibited by different kinds of Assessment Events (Koedinger, Corbett, & Perfetti, 2012).
+			</p>
+			<p>
+				KC models are created as a way to represent students’ latent knowledge. When building assessment items, different knowledge components are mapped to each item such that they capture information about what a student knows or does not know based on their performance on that assessment item. In the pursuit of this goal, it has turned out to be useful to model the learner’s knowledge as a set of interrelated KCs. In a traditional approach to KC modeling, an author creates a model  by hand based on careful cognitive task analysis (Koedinger & Aleven, 2013). Ideally the author would conduct both theoretical task analysis and empirical task analysis (Lovett, 1998). In theoretical task analysis, an author elucidates the knowledge demands of a task by carefully analyzing its structure (e.g. possible goals/ subgoals, hierarchies). In empirical task analysis, by contrast, collects data about problem solving in the given task domain, employing methods such as think-alouds, interviews of experts, analysis of errors novices make on written tests, difficulty factors analysis (DFA), and so forth. (Baker, Corbett & Koedinger, 2007).
+			</p>
+			<p>
+				For this project, initially we had one broad learning objective which was : “Given a problem and a set of possible solutions, students identify the best possible solution by using criteria to identify what is more important and identify evidence to support the possible solutions.” 
+			</p>
+			<p>
+				In order to identify what each of our assessment items scored, we broke down this learning objective into several knowledge components. This breaking down of knowledge components was done by conducting both theoretical and empirical cognitive task analysis. After breaking down the knowledge components we also mapped each question to the different knowledge components in order to identify skills which were assessed by each question. This was not a one to one mapping but rather a one to many mapping, such that each question was measuring more than one knowledge components. 
+			</p>
+		</div> <!-- End KC Modeling -->
+	</div> <!-- End Instructional Features -->
+
+	<!-- Design Features -->
+	<div class="section">
+		<app-research-header txt="Design Features"></app-research-header>
+		<!-- Two-Panel Design -->
+		<div class="subsection">
+			<h2>Two-Panel Design</h2>
+			<p>
+				When students are taking assessment in CritAssess, they would find that all task scenarios and questions are presented in two panels that are parallel to each other. The position of task scenario is fixed; whereas the questions that follow are presented one at a time. WIthin a scenario, one needs to confirm and submit the answer to the previous question before going to the next question. Once the answer being confirmed, it is no longer subject to any changes. The space between lines and letters are carefully adjusted to minimize external cognitive load.
+			</p>
+			<p>
+				The adoption of two-panel design and fine tuning of line spaces aim to minimize external cognitive load to ensure that what we are assessing is something that really matters to our learners. When the scenario gets too long, it is distracting for learners to have to move back and forth. Moreover, learners need to confirm their answer to the previous question before going to the next, as the answer to the next question would give clues to the prior question.
+			</p>
+		</div> <!-- End Two-Panel Design -->
+
+		<div class="subsection">
+			<h2>Learner Dashboard</h2>
+			<p>
+				When learners log into CritAssess, they would be presented with a learner dashboard with a learner report, overall achievement, test history and potential certificate. They could access a detailed report with scenario-by-scenario correctness feedback. On learner report, top three performing skills and skills that need most practice would be listed. A visualization of performance in each single skill would be listed. Learners could download their report as a pdf, include their digital badge for  a Linkedin profile,  or send it to recruiters.
+			</p>
+			<p>
+				It is convenient and cohesive for the learner to have a one-stop place showing everything that they needs: learner report, overall achievement, section-specific feedback, and test history.The dashboard enables learners to easily access all their performance data. Visualization of achievement helps learners have a better sense of where they excel and where they need further improvement.
+			</p>
+		</div> <!-- End Learner Dashboard -->
+
+		<div class="subsection">
+			<h2>Tooltip Glossary</h2>
+			<p>
+				While taking the CritAssess tests, students would also see some text in blue and on hovering over this text, they are presented with the meaning of this text. Since our scenarios were based on real-life work situations, our questions had technical terms like minimum viable product, product manager, user research, customer relationship management, etc which were not easily comprehensible for all learners. We did not want learners to get the question incorrect only because they did not understand the meaning of these technical terms. In order to do so, we added a hover over effect over technical terms in the test so that lack of understanding the terms would not lead to their failure. By adding the glossary feature, we were also making sure that the assessments are valid and are not assessing learners’ knowledge related to industry jargon.
+			</p>
+			<div class="imgWrap">
+				<img src="./assets/glossary.png">
+			</div>
+			<p>
+				The glossary feature fosters achievment of the secondary learning objective, “Be familiar with industry jargon like product manager, minimal viable product, etc”. Instead of having a table of the terms with the industry jargon, we found in our user testing for it to be more useful to have the definitions/explanations of these terms available to the learners as they read the scenario. This led us to think of a way to present the definition within the scenario itself.
+			</p>
+		</div>
+	</div> <!-- End Design Features -->
+</div>
