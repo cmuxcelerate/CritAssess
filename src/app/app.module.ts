@@ -43,6 +43,7 @@ import { DevelopmentComponent } from './pre-test_pages/development/development.c
 import { AboutComponent } from './pre-test_pages/about/about.component';
 import { AboutEntryComponent } from './pre-test_pages/about/about-entry/about-entry.component';
 import { ResearchHeaderComponent } from './pre-test_pages/research/research-header/research-header.component';
+import { ResearchQuoteComponent } from './pre-test_pages/research/research-quote/research-quote.component';
 
 
 @NgModule({
@@ -86,6 +87,7 @@ import { ResearchHeaderComponent } from './pre-test_pages/research/research-head
     AboutComponent,
     AboutEntryComponent,
     ResearchHeaderComponent,
+    ResearchQuoteComponent,
   ],
   imports: [
     BrowserModule,
