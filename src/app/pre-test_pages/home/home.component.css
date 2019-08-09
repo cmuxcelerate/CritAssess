@@ -14,6 +14,7 @@ app-choose-section {
 	width: 45%;
 	margin-left: 25%;
 	border-radius: 6px;
+	z-index: 5;
 }
 #text {
 	width: 39.3%;
